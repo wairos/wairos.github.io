@@ -1,0 +1,74 @@
+body {
+  background-color: rgb(50, 50, 50);
+  
+}
+
+#scaleView {
+  font-family: "Roboto";
+  letter-spacing: 1px;
+  background-color:rgb(180,180,180);
+  color:white;
+}
+
+#Key {
+  font-family:Anton;
+}
+
+ul {
+  font-family: Roboto;
+}
+
+
+.btn-primary {
+  font-family:Anton;
+  width: 3em;
+  cursor:pointer;
+  margin-bottom:.3em;
+}
+.btn-secondary {
+  font-family:Roboto;
+}
+.btn {
+  cursor:pointer;
+}
+#resetRow {
+  width:100%;
+}
+#resetButton {
+  width: 10%;
+  margin: 1em 45% 0 45%;
+}
+#guitarContainer {
+  margin-top: 2em;
+  width: 100%;
+  text-align: center;
+  border:1px solid black;
+  border-radius:5px;
+}
+#guitarTitle {
+  width:100%;
+}
+
+#guitarFretBoard {
+  height: 150px;
+  width: 100%;
+}
+@media only screen and (max-width:500px){
+  #guitarContainer {
+    
+  }
+  #guitarFretBoard {
+    margin-top:1em;
+    margin-bottom:1em;
+    transform: rotate(90deg);
+  }
+}
+#note {
+  height: auto;
+  width: 20px;
+  background-color: white;
+  border-radius: 50%;
+}
+.chordButtons {
+  margin-bottom:1em;
+}

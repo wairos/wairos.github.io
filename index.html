@@ -1,8 +1,167 @@
 <!DOCTYPE html>
- <head>
+<html lang="en">
+<head>
+  
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
   <title>Musician Key</title>
- </head>
- <body>
-  <h1>Welcome to Musician Key</h1>
- </body>
+  <link href="https://fonts.googleapis.com/css?family=Catamaran|Covered+By+Your+Grace|Nunito|Shadows+Into+Light+Two|Roboto|Anton" rel="stylesheet">
+  <!--  Styles  -->
+  
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="\style.css">
+</head>
+<body>
+  
+ 
+
+<div class="container jumbotron" style="margin-top:5em;background-color:rgb(209, 239, 255);border:2px solid white;">
+  <div "container" style="background-color:white; border-radius:5px; margin-bottom:2em; border:1px solid black;">
+    <h1 id="Key" class="text-center">Major Key</h1>
+
+    <p id="scaleView" class="text-center">Notes in the key</p>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2 col-md-2 col-sm-2">
+
+          <ul id="iChordList" style="list-style:none; padding-left:-10px; ">
+            <li>
+              <p id="Fifth">5th</p>
+            </li>
+            <li>
+              <p id="Third">3rd</p>
+            </li>
+            <li>
+              <p id="Root">Root</p>
+            </li>
+          </ul>
+          <button id="iButton" class="btn btn-secondary">I Chord</button>
+          
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2">
+
+          <ul style="list-style:none; padding-left:-10px;">
+            <li>
+              <p id="iiFifth">6th</p>
+            </li>
+            <li>
+              <p id="iiThird">4th</p>
+            </li>
+            <li>
+              <p id="iiRoot">2nd</p>
+
+            </li>
+          </ul>
+          <button id="iiButton" class="btn btn-secondary">ii Chord</button>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2">
+
+          <ul style="list-style:none; padding-left:-10px;">
+            <li>
+              <p id="iiiFifth">7th</p>
+
+            </li>
+            <li>
+              <p id="iiiThird">5th</p>
+            </li>
+            <li>
+              <p id="iiiRoot">3rd</p>
+            </li>
+          </ul>
+          <button id="iiiButton" class="btn btn-secondary">iii Chord</button>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2">
+
+          <ul style="list-style:none; padding-left:-10px;">
+            <li>
+              <p id="ivFifth">Root</p>
+
+            </li>
+            <li>
+              <p id="ivThird">6th</p>
+            </li>
+            <li>
+              <p id="ivRoot">4th</p>
+            </li>
+          </ul>
+          <button id="ivButton" class="btn btn-secondary">IV Chord</button>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2">
+
+          <ul style="list-style:none; padding-left:-10px;">
+            <li>
+              <p id="vFifth">2nd</p>
+
+            </li>
+            <li>
+              <p id="vThird">7th</p>
+            </li>
+            <li>
+              <p id="vRoot">5th</p>
+            </li>
+          </ul>
+          <button id="vButton" class="btn btn-secondary">V Chord</button>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2">
+
+          <ul style="list-style:none; padding-left:-10px;">
+            <li>
+              <p id="viFifth">3rd</p>
+
+            </li>
+            <li>
+              <p id="viThird">Root</p>
+            </li>
+            <li>
+              <p id="viRoot">6th</p>
+            </li>
+          </ul>
+          <button id="viButton" class="btn btn-secondary chordButtons">vi Chord</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-sm-4 text-center">
+        <button id="button" class="btn-small btn-primary">C</button>
+        <button id="dbutton" class="btn-small btn-primary">D</button>
+        <button id="ebutton" class="btn-small btn-primary">E</button>
+        <button id="fbutton" class="btn-small btn-primary">F</button>
+        <button id="gbutton" class="btn-small btn-primary">G</button>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 text-center">
+        <button id="abutton" class="btn-small btn-primary">A</button>
+        <button id="bbutton" class="btn-small btn-primary">B</button>
+        <button id="csbutton" class="btn-small btn-primary">C#</button>
+        <button id="fsbutton" class="btn-small btn-primary">F#</button>
+        <button id="gbbutton" class="btn-small btn-primary">Gb</button>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 text-center">
+        <button id="abbutton" class="btn-small btn-primary">Ab</button>
+        <button id="bbbutton" class="btn-small btn-primary">Bb</button>
+        <button id="cbbutton" class="btn-small btn-primary">Cb</button>
+        <button id="dbbutton" class="btn-small btn-primary">Db</button>
+        <button id="ebbutton" class="btn-small btn-primary">Eb</button>
+      </div>
+      <div id="resetRow">
+      <button id="resetButton" class="btn-small btn-primary">Reset</button>
+      </div>
+      <div id="guitarContainer">
+        <button id="guitarTitle" class="btn btn-secondary">Guitar Fret Board</button>
+        <div id="note"></div>
+        <!-- Need original artwork for each key for both bass and guitar plus any other instruments -->
+        <img id="guitarFretBoard" src="#">
+	<p>Coming Soon!</p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="\index.js"></script>
+</body>
 </html>
