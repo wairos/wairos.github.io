@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
+
   <!--  Meta  -->
   <meta charset="UTF-8" />
   <title>Musician Key</title>
   <link href="https://fonts.googleapis.com/css?family=Catamaran|Covered+By+Your+Grace|Nunito|Shadows+Into+Light+Two|Roboto|Anton" rel="stylesheet">
   <!--  Styles  -->
-  
+
   <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
 
   <link rel="stylesheet" href="\style.css">
 </head>
 <body>
-  
- 
+
+
 
 <div class="container jumbotron" style="margin-top:5em;background-color:rgb(209, 239, 255);border:2px solid white;">
-  <div "container" style="background-color:white; border-radius:5px; margin-bottom:2em; border:1px solid black;">
-    <h1 id="Key" class="text-center">Major Key</h1>
+  <div id="container" style="background-color:white; border-radius:5px; margin-bottom:2em; border:1px solid black;">
+    <h1 id="Key" class="text-center Anton">Major Key</h1>
 
-    <p id="scaleView" class="text-center">Notes in the key</p>
+    <p id="scaleView" class="text-center scaleView">Notes in the key</p>
 
     <div class="container">
       <div class="row">
@@ -39,7 +39,7 @@
             </li>
           </ul>
           <button id="iButton" class="btn btn-secondary">I Chord</button>
-          
+
         </div>
         <div class="col-lg-2 col-md-2 col-sm-2">
 
@@ -147,16 +147,16 @@
         <button id="dbbutton" class="btn-small btn-primary">Db</button>
         <button id="ebbutton" class="btn-small btn-primary">Eb</button>
       </div>
-      <div id="resetRow">
+      <div id="resetRow" class="fullwidth">
       <button id="resetButton" class="btn-small btn-primary">Reset</button>
       </div>
-      <div id="guitarContainer">
-        <button id="guitarTitle" class="btn btn-secondary">Guitar Fret Board</button>
-        <div id="note"></div>
+      <div id="guitarContainer" class="guitarContainer">
+        <button id="guitarTitle" class="btn btn-secondary fullwidth">Guitar Fret Board</button>
+        <div></div>
         <!-- Need original artwork for each key for both bass and guitar plus any other instruments -->
-        <img id="guitarFretBoard" src="#">
+        <img id="guitarFretBoard" class="guitarFretBoard" src="#">
 	<p>Coming Soon!</p>
-        
+
       </div>
     </div>
   </div>
