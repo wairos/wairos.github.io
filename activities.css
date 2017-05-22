@@ -1,0 +1,16 @@
+.paralax {
+  background-image:url(img/IMG_0188.png);
+  min-height:300px;
+  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.paralax2 {
+  background-image:url(img/IMG_0220.JPG);
+  min-height:500px;
+  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

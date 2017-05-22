@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Shirley's Mother Goose</title>
+   <link rel="shortcut icon" href="favicon.ico" />
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script src="script/index.js"></script>
+ </head>
+ <body>
+<!-- HOURS OF OPERATION -->
+    <i class="fa fa-chevron-left" aria-hidden="true"><a href="http://localhost">back</a></i>
+    <div class="container containerWidth textCenter">
+    <h2 class="pink">Hours of Operation</h2>
+    <p>Open: Weekdays<br>6:00 a.m. - 6:00 p.m.<br>Closed: Weekends, Thanksgiving Day, Christmas Day, and New Year's Day.</p>
+    <hr>
+<!-- Google Map -->
+<h2>Location</h2>
+<div id="map"></div>
+<script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgobp5nGxjR40KR6biIz-eakHe5meTo-s&callback=initMap">
+    </script>
+<!-- CONTACT INFO -->
+    <hr>
+    <h2>Contact Information</h2>
+    <div class="row">
+     <div class="col-xs-6">
+      <h3 class="pink">Phone Number</h3>
+      <p><strong class="pink">(501) 268-7019</strong><br>Feel free to call our friendly staff with any questions!</p>
+    </div>
+  <div class="col-xs-6">
+    <h3 class="pink">Email</h3>
+    <p><a class="link" href="jwaire@mgoose.org">jwaire@mgoose.org</a><br>Feel free to email our coorindinator Mr. Josh with any questions or concerns.</p>
+  </div>
+  </div>
+  <div class="row">
+  <div class="col-xs-6">
+    <h3 class="pink">Social Sites</h3>
+      <a href="https://www.facebook.com/mothergoosedaycare" class="fa fa-facebook"></a>
+      <a href="https://twitter.com/mgdaycare" class="fa fa-twitter"> </a>
+      <p>Subscribe to our Facebook page and follow us on Twitter for the lastest news and announcements!</p>
+    </div>
+    <div class="col-xs-6">
+    <h3 class="pink">Address</h3>
+    <p><strong>1314 East River Ave<br>Searcy, Arkansas 72143</strong><br>Come tour our facility and meet our friendly staff in person.</p>
+  </div>
+  </div>
+    <hr>
+    </div>
+
+  </body>
+</html>

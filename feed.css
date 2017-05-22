@@ -1,0 +1,15 @@
+
+.facebook li {
+  list-style: none;
+  text-align: left;
+  background-color: white;
+  margin-top:-18px;
+}
+.facebook p {
+  color:black;
+}
+
+.feed {
+  
+  margin-top:1em;
+}
