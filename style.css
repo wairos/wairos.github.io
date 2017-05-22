@@ -154,7 +154,7 @@ a {
   display: block;
   padding: 14px 16px;
 }
-.nava:hover {
+.nava:hover, .nava:active {
   color:white;
   background-color:rgb(12, 151, 107);
   text-decoration: none;
@@ -177,7 +177,7 @@ li a, .dropbtn {
     text-decoration: none;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
+li a:hover, li a:active .dropdown:hover, .dropdown:active .dropbtn {
     color:white;
     background-color:rgb(12, 151, 107) ;
     text-decoration: none;
@@ -209,13 +209,13 @@ a:active {
     cursor:pointer;
 }
 
-.dropdown-content a:hover {
+.dropdown-content a:hover, .dropdown-content a:active {
     background-color: #f1f1f1;
     color:grey;
     cursor:pointer;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content, .dropdown:active .dropdown-content {
     display: block;
 }
 .calendarWidth {

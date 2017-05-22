@@ -4,7 +4,7 @@ $(document).ready(function (){
   $("#content").load("indexfile.php");
   $("#footer").load("footer.php");
 
-  $("#home").click(function () {
+  $("#home").on(("tap","click"),function () {
     $("#header").addClass("hideheader");
     $("li").removeClass("active");
     $("a").removeClass("active");
@@ -14,7 +14,7 @@ $(document).ready(function (){
     $(document).scrollTop(0);
   });
 
-  $("#contactus").click(function () {
+  $("#contactus").on(("tap","click"),function () {
     $("#header").removeClass("hideheader");
     $("li").removeClass("active");
     $("a").removeClass("active");
@@ -24,7 +24,7 @@ $(document).ready(function (){
     $("#footer").hide();
     $(document).scrollTop(0);
   });
-  $("#activities").click(function () {
+  $("#activities").on(("tap","click"),function () {
     $("#header").removeClass("hideheader");
     $("li").removeClass("active");
     $("a").removeClass("active");
@@ -34,7 +34,7 @@ $(document).ready(function (){
     $("#footer").show();
     $(document).scrollTop(0);
   });
-  $("#curriculum").click(function () {
+  $("#curriculum").on(("tap","click"),function () {
     $("#header").removeClass("hideheader");
     $("li").removeClass("active");
     $("a").removeClass("active");
@@ -45,7 +45,7 @@ $(document).ready(function (){
     $(document).scrollTop(0);
   });
 
-  $("#ourfacility").click(function () {
+  $("#ourfacility").on(("tap","click"),function () {
     $("#header").removeClass("hideheader");
     $("li").removeClass("active");
     $("a").removeClass("active");
@@ -55,7 +55,7 @@ $(document).ready(function (){
     $("#footer").show();
     $(document).scrollTop(0);
   });
-  $("#announcements").click(function () {
+  $("#announcements").on(("tap","click"),function () {
     $("#header").removeClass("hideheader");
     $("li").removeClass("active");
     $("a").removeClass("active");
@@ -65,7 +65,7 @@ $(document).ready(function (){
     $("#footer").show();
     $(document).scrollTop(0);
   });
-  $("#rates").click(function () {
+  $("#rates").on(("tap","click"), function () {
     $("#header").removeClass("hideheader");
     $("li").removeClass("active");
     $("a").removeClass("active");
@@ -74,7 +74,7 @@ $(document).ready(function (){
     $("#footer").show();
     $(document).scrollTop(0);
   });
-  $("#payment").click(function () {
+  $("#payment").on(("tap","click"),function () {
     $("#header").removeClass("hideheader");
     $("li").removeClass("active");
     $("a").removeClass("active");
