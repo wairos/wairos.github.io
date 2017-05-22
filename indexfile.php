@@ -11,7 +11,7 @@
         <h2 class="white">(501)268-7019</h2>
       </div>
       </div>
-      <div class="greenBG textCenter" style="height:150px; width:100%;margin-bottom:-10;">
+      <div class="greenBG textCenter gooseBar" style="height:150px; width:100%;margin-bottom:-10;">
         <img src="img/MotherGooseNewleft.png" style="height:100%;padding:1em 0 1em 0;"/>
       </div>
       <!-- Editable ANNOUNCEMENT AREA -->

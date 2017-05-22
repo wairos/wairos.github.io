@@ -253,26 +253,29 @@ a:active {
 .paralax {
   background-image:url(img/IMG_0188.png);
   min-height:700px;
-  background-attachment: fixed;
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 .paralax2 {
-  background-image:url(img/IMG_2817.png);
-  min-height:600px;
-  background-attachment: fixed;
+    background-image:url(img/IMG_2817.png);
+    min-height:600px;
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 .paralax3 {
   background-image:url(img/mother+goose.png);
   min-height:400px;
-  background-attachment: fixed;
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 .paratype {
   background-color:rgba(125,125,125,.5);
@@ -290,20 +293,28 @@ a:active {
     padding:0 0 0 50px;
   }
 
+
 }
 @media only screen and (min-width: 432px) {
   .header {
-    padding-top:4em;
     padding-bottom:1em;
 
   }
+
 }
-@media only screen and (min-width:1200px) {
-  .pinkStroke {
-    text-shadow:
-     -0 -0 0 rgb(244, 81, 165),
-      0 -0 0 rgb(244, 81, 165),
-      -1px 1px 0 rgb(244, 81, 165),
-       1px 1px 0 rgb(244, 81, 165);
+@media only screen and (min-width: 768px) {
+  .hideheader {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .paralax {
+    display:none;
+  }
+  .paralax2 {
+    display:none;
+  }
+  .gooseBar {
+    display:none;
   }
 }

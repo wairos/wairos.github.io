@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <cms:editable name='rate' type='richtext'>
+    <cms:editable name='rates' type='richtext'>
    <div class="container containerWidth">
    <h2>Rates</h2>
    <p>Rates are subject to change periodically. Please call (501) 268-7019 for the latest rate information.</p>

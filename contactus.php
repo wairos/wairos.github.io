@@ -34,7 +34,7 @@
     <hr>
     </div>
     <div class="greenBG textCenter" style="height:150px; width:100%;margin-bottom:-10;">
-      <img src="img/Mother+GooseNewLeft.png" style="height:100%;padding:1em 0 1em 0;"/>
+      <img src="img/MotherGooseNewleft.png" style="height:100%;padding:1em 0 1em 0;"/>
     </div>
   </body>
 </html>
