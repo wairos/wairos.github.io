@@ -40,7 +40,7 @@
   <p>Weekly tuition is due on Friday. Payment is accepted via cash, check, debit or credit card on-site and web payments via PayPal.</p>
   <p>Shirley's Mother Goose participates in the <a class="link" href="http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&ved=0CCkQFjAA&url=http%3A%2F%2Fhumanservices.arkansas.gov%2Fdccece%2FPages%2FChildCareAssistance.aspx&ei=bfEVU_LbH8Wp2gWJpYHIAQ&usg=AFQjCNFs55cOv-QWwOrO8JJ3HvIA865HtA&bvm=bv.62286460,d.b2I" target="_blank">Arkansas Department of Human Service's voucher program</a> and the <a class="link" href="http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&sqi=2&ved=0CCQQFjAA&url=http%3A%2F%2Fwww.arpathways.com%2F&ei=jfEVU67EOcWC2wWBvIGACg&usg=AFQjCNFsT-zqcQjM76IsE8VrL7qDgeYJRg&bvm=bv.62286460,d.b2I" target="_blank">Arkansas Career Pathways Initiative</a>.</p>
   <hr>
-  <h2>Registration/Enrollment Forms</h2>
+  <h2>Registration & Enrollment Forms</h2>
   <h3 class="text-center pink"> All 4 forms required</h3>
   <div class="container smallWidth">
   <ol class="text-cente lineheight">
