@@ -4,7 +4,7 @@ $(document).ready(function (){
   $("#content").load("indexfile.php");
   $("#footer").load("footer.php");
 
-  $("#home").on(("touchstart","click"),function () {
+  $("#home").on(("touchend","click"),function () {
     $("#header").addClass("hideheader");
     $("li").removeClass("active");
     $("a").removeClass("active");
@@ -14,7 +14,7 @@ $(document).ready(function (){
     $(document).scrollTop(0);
   });
 
-  $("#contactus").on(("touchstart","click"),function () {
+  $("#contactus").on(("touchend","click"),function () {
     $("#header").removeClass("hideheader");
     $("li").removeClass("active");
     $("a").removeClass("active");
@@ -24,7 +24,7 @@ $(document).ready(function (){
     $("#footer").hide();
     $(document).scrollTop(0);
   });
-  $("#activities").on(("touchstart","click"),function () {
+  $("#activities").on(("touchend","click"),function () {
     $("#header").removeClass("hideheader");
     $("li").removeClass("active");
     $("a").removeClass("active");
@@ -34,7 +34,7 @@ $(document).ready(function (){
     $("#footer").show();
     $(document).scrollTop(0);
   });
-  $("#curriculum").on(("touchstart","click"),function () {
+  $("#curriculum").on(("touchend","click"),function () {
     $("#header").removeClass("hideheader");
     $("li").removeClass("active");
     $("a").removeClass("active");
@@ -45,7 +45,7 @@ $(document).ready(function (){
     $(document).scrollTop(0);
   });
 
-  $("#ourfacility").on(("touchstart","click"),function () {
+  $("#ourfacility").on(("touchend","click"),function () {
     $("#header").removeClass("hideheader");
     $("li").removeClass("active");
     $("a").removeClass("active");
@@ -55,7 +55,7 @@ $(document).ready(function (){
     $("#footer").show();
     $(document).scrollTop(0);
   });
-  $("#announcements").on(("touchstart","click"),function () {
+  $("#announcements").on(("touchend","click"),function () {
     $("#header").removeClass("hideheader");
     $("li").removeClass("active");
     $("a").removeClass("active");
@@ -65,7 +65,7 @@ $(document).ready(function (){
     $("#footer").show();
     $(document).scrollTop(0);
   });
-  $("#rates").on(("touchstart","click"), function () {
+  $("#rates").on(("touchend","click"), function () {
     $("#header").removeClass("hideheader");
     $("li").removeClass("active");
     $("a").removeClass("active");
@@ -74,7 +74,7 @@ $(document).ready(function (){
     $("#footer").show();
     $(document).scrollTop(0);
   });
-  $("#payment").on(("touchstart","click"),function () {
+  $("#payment").on(("touchend","click"),function () {
     $("#header").removeClass("hideheader");
     $("li").removeClass("active");
     $("a").removeClass("active");
