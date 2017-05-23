@@ -65,7 +65,7 @@ $(document).ready(function (){
     $("#footer").show();
     $(document).scrollTop(0);
   });
-  $("#rates").on(("touchend","click"), function () {
+  $("#rates").on(("tap","click"), function () {
     $("#header").removeClass("hideheader");
     $("li").removeClass("active");
     $("a").removeClass("active");
@@ -74,7 +74,7 @@ $(document).ready(function (){
     $("#footer").show();
     $(document).scrollTop(0);
   });
-  $("#payment").on(("touchend","click"),function () {
+  $("#payment").on(("tap","click"),function () {
     $("#header").removeClass("hideheader");
     $("li").removeClass("active");
     $("a").removeClass("active");
