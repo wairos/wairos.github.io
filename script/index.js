@@ -4,7 +4,7 @@ $(document).ready(function (){
   $("#content").load("indexfile.php");
   $("#footer").load("footer.php");
 
-  $("#home").on(("tap","click"),function () {
+  $("#home").on(("touchstart","click"),function () {
     $("#header").addClass("hideheader");
     $("li").removeClass("active");
     $("a").removeClass("active");
@@ -14,7 +14,7 @@ $(document).ready(function (){
     $(document).scrollTop(0);
   });
 
-  $("#contactus").on(("tap","click"),function () {
+  $("#contactus").on(("touchstart","click"),function () {
     $("#header").removeClass("hideheader");
     $("li").removeClass("active");
     $("a").removeClass("active");
@@ -24,7 +24,7 @@ $(document).ready(function (){
     $("#footer").hide();
     $(document).scrollTop(0);
   });
-  $("#activities").on(("tap","click"),function () {
+  $("#activities").on(("touchstart","click"),function () {
     $("#header").removeClass("hideheader");
     $("li").removeClass("active");
     $("a").removeClass("active");
@@ -34,7 +34,7 @@ $(document).ready(function (){
     $("#footer").show();
     $(document).scrollTop(0);
   });
-  $("#curriculum").on(("tap","click"),function () {
+  $("#curriculum").on(("touchstart","click"),function () {
     $("#header").removeClass("hideheader");
     $("li").removeClass("active");
     $("a").removeClass("active");
@@ -45,7 +45,7 @@ $(document).ready(function (){
     $(document).scrollTop(0);
   });
 
-  $("#ourfacility").on(("tap","click"),function () {
+  $("#ourfacility").on(("touchstart","click"),function () {
     $("#header").removeClass("hideheader");
     $("li").removeClass("active");
     $("a").removeClass("active");
@@ -55,7 +55,7 @@ $(document).ready(function (){
     $("#footer").show();
     $(document).scrollTop(0);
   });
-  $("#announcements").on(("tap","click"),function () {
+  $("#announcements").on(("touchstart","click"),function () {
     $("#header").removeClass("hideheader");
     $("li").removeClass("active");
     $("a").removeClass("active");
@@ -65,7 +65,7 @@ $(document).ready(function (){
     $("#footer").show();
     $(document).scrollTop(0);
   });
-  $("#rates").on(("tap","click"), function () {
+  $("#rates").on(("touchstart","click"), function () {
     $("#header").removeClass("hideheader");
     $("li").removeClass("active");
     $("a").removeClass("active");
@@ -74,7 +74,7 @@ $(document).ready(function (){
     $("#footer").show();
     $(document).scrollTop(0);
   });
-  $("#payment").on(("tap","click"),function () {
+  $("#payment").on(("touchstart","click"),function () {
     $("#header").removeClass("hideheader");
     $("li").removeClass("active");
     $("a").removeClass("active");
