@@ -301,6 +301,8 @@ a.dtnavphone:hover {
   background-color: rgba(60,60,60,.8);
   width:100%;
   z-index: 2;
+  padding: 0;
+  margin:0;
 }
 .navMainButton {
   display:inline-block;
@@ -328,15 +330,17 @@ a.dtnavphone:hover {
 }
 .navSubButton{
   width: 100%;
-  padding:10px;
+  padding:10px 10px 10px 30px;
   float: left;
   display: block;
 }
 .navSubButton.phone {
+  padding:10px;
   text-align:center;
 }
 .navSubButton.fa {
-  width:50%;
+  text-align: center;
+  padding:10px;
   border-radius:0;
 }
 .active {
