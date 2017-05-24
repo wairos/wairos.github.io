@@ -112,7 +112,7 @@ a {
   text-decoration: none;
   margin: 2px 2px;
 }
-.navul {
+.dtnavul {
   list-style: none;
   margin:0;
   padding:0;
@@ -124,52 +124,52 @@ a {
   width:100%;
   z-index:1;
 }
-.navli {
+.dtnavli {
   float:left;
   text-decoration: none;
   cursor:pointer;
 }
-.navli:active {
+.dtnavli:active {
   color:white;
   text-decoration:none;
 }
-.nava {
+.dtnava {
   display:block;
   color:white;
   text-align:center;
   padding:14px 16px;
   text-decoration: none;
 }
-.nava a {
+.dtnava a {
   text-decoration: none;
   color:white;
 }
-.navsocial {
+.dtnavsocial {
   float: right;
   display:inline-block;
   margin:7px 5px;
 }
-.navphone {
+.dtnavphone {
   float: right;
   display: block;
   padding: 14px 16px;
 }
-.nava:hover .nava:active {
+.dtnava:hover {
   color:white;
   background-color:rgb(12, 151, 107);
   text-decoration: none;
 }
-.nava:active {
+.dtnava:active {
   text-decoration: none;
   color: white;
 }
-.active {
+.dtactive {
   background-color: rgb(244, 81, 165);
   background-color:rgba(244, 81, 165,5);
   text-decoration: none;
   color:white;
 }
-li a, .dropbtn {
+li a, .dtdropbtn {
     display: inline-block;
     color: white;
     text-align: center;
@@ -177,30 +177,30 @@ li a, .dropbtn {
     text-decoration: none;
 }
 
-li a:hover .dropdown:hover .dropbtn {
+li a:hover, .dtdropdown:hover .dtdropbtn {
     color:white;
     background-color:rgb(12, 151, 107) ;
     text-decoration: none;
     cursor: pointer;
 }
 
-li.dropdown {
+li.dtdropdown {
     display: inline-block;
 }
 a:active {
   text-decoration:none;
 }
 
-.dropdown-content {
+.dtdropdown-content {
     display: none;
     position: fixed;
     background-color: rgb(12, 151, 107);
     min-width: 150px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 3;
 }
 
-.dropdown-content a {
+.dtdropdown-content a {
     color: white;
     padding: 12px 16px;
     text-decoration: none;
@@ -209,13 +209,13 @@ a:active {
     cursor:pointer;
 }
 
-.dropdown-content a:hover, .dropdown-content a:active {
+.dtdropdown-content a:hover {
     background-color: #f1f1f1;
     color:grey;
     cursor:pointer;
 }
 
-.dropdown:hover .dropdown-content, .dropdown:active .dropdown-content {
+.dtdropdown:hover .dtdropdown-content {
     display: block;
 }
 .calendarWidth {

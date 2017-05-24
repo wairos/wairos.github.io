@@ -181,10 +181,124 @@ a {
   padding-top:30%;
 
 }
+
+.dtnavul {
+  list-style: none;
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  background-color:rgb(128,128,128);
+  background-color:rgba(128,128,128,.8);
+  position:fixed;
+  top: 0;
+  width:100%;
+  z-index:1;
+}
+.dtnavli {
+  float:left;
+  text-decoration: none;
+  cursor:pointer;
+}
+.dtnavli:active {
+  color:white;
+  text-decoration:none;
+}
+.dtnava {
+  display:block;
+  color:white;
+  text-align:center;
+  padding:14px 16px;
+  text-decoration: none;
+}
+.dtnava a {
+  text-decoration: none;
+  color:white;
+}
+.dtnavsocial {
+  float: right;
+  display:inline-block;
+  margin:7px 5px;
+}
+.dtnavphone {
+  float: right;
+  display: block;
+  padding: 14px 16px;
+  color:white;
+}
+a.dtnavphone:hover {
+  color:white;
+  text-decoration: none;
+}
+.dtnava:hover {
+  color:white;
+  background-color:rgb(12, 151, 107);
+  text-decoration: none;
+}
+.dtnava:active {
+  text-decoration: none;
+  color: white;
+}
+.dtactive {
+  background-color: rgb(244, 81, 165);
+  background-color:rgba(244, 81, 165,5);
+  text-decoration: none;
+  color:white;
+}
+.dtlia, .dtdropbtn {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dtlia:hover, .dtdropdown:hover .dtdropbtn {
+    color:white;
+    background-color:rgb(12, 151, 107) ;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.dtli.dtdropdown {
+    display: inline-block;
+}
+.dtlia:active {
+  text-decoration:none;
+}
+
+.dtdropdown-content {
+    display: none;
+    position: fixed;
+    background-color: rgb(12, 151, 107);
+    min-width: 150px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 3;
+}
+
+.dtdropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    cursor:pointer;
+}
+
+.dtdropdown-content a:hover {
+    background-color: #f1f1f1;
+    color:grey;
+    cursor:pointer;
+}
+
+.dtdropdown:hover .dtdropdown-content {
+    display: block;
+}
+
 .navMenu {
   list-style: none;
   position: fixed;
-  background-color: rgba(125,125,125,.8);
+  background-color: rgb(125,125,125);
+  background-color: rgba(60,60,60,.8);
   width:100%;
   z-index: 2;
 }
@@ -194,20 +308,22 @@ a {
   float:left;
 }
 .navMainButton a {
+  padding:10px;
   color:white;
   text-decoration: none;
 }
-.navDropButton {
 
-}
 .navDropButton {
   color:white;
   padding:10px;
   float: right;
+  cursor:pointer;
 }
 .subMenu a {
   display:inline-block;
   color:white;
+  margin-left: -10px;
+  text-decoration: none;
 
 }
 .navSubButton{
@@ -216,7 +332,21 @@ a {
   float: left;
   display: block;
 }
-
+.navSubButton.phone {
+  text-align:center;
+}
+.navSubButton.fa {
+  width:50%;
+  border-radius:0;
+}
+.active {
+  background-color:rgb(244, 81, 165);
+  background-color:rgba(244, 81, 165,.9);
+}
+.navDropButton.active {
+  color:rgb(244, 81, 165);
+  background-color: inherit;
+}
 @media only screen and (min-width:992px) {
   #shirleys {
     margin-top: 55px;

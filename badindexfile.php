@@ -2,12 +2,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Shirley's Mother Goose</title>
+
   </head>
   <body>
-    <!-- BETTER BEGINNINGS BANNER -->
-      <div style="background-color:rgb(150, 150, 150);margin-top:-20px;">
-        <h2 class="textCenter" style="color:white; font-family:'Open Sans';padding:.2em 0 .25em 0;">We are a <span><a class="link" href="http://www.arbetterbeginnings.com/" target="_blank">Better Beginnings</a></span>-certified licensed childcare facility in Searcy, Arkansas.</h2>
+      <div class="paralax">
+        <div class="container textCenter halfway">
+        <h1 class="pink helvetica" style="font-size:50px;"><strong>Shirley's Mother Goose</strong></h1>
+        <h2 class="white">(501)268-7019</h2>
+      </div>
+      </div>
+      <div class="greenBG textCenter gooseBar" style="height:150px; width:100%;margin-bottom:-10;">
+        <img src="img/MotherGooseNewleft.png" style="height:100%;padding:1em 0 1em 0;"/>
       </div>
       <!-- Editable ANNOUNCEMENT AREA -->
       <div id="programInfo" class="container containerWidth">
@@ -15,6 +20,7 @@
         <h2 class="pink textCenter" id="Announcement" style="font-family:'Open Sans';"><strong><em></em></strong></h2>
       </cms:editable>
     </div>
+
     <!-- IMAGE CAROUSEL-->
         <div class="container carasel">
         <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin: 1em 0 1em 0;">
@@ -72,8 +78,10 @@
         </blockquote>
       </div>
       </cms:editable>
+
       <!-- BUILDING IMAGE -->
-      <img class="headroom" style="width:100%" src="img/mother+goose.png"/>
+      <div class="paralax2"></div>
+
 
   </body>
 </html>

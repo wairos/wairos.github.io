@@ -18,13 +18,35 @@
   <script src="script/index.js"></script>
 </head>
   <body>
-    <!-- NAV BAR -->
-      <nav>
+    <!-- DESKTOP NAV BAR -->
+    <nav id="dt" class="hidden-sm hidden-xs">
+        <ul class="dtnavul">
+        <li id="dthome" class="dtnavli dtactive"><a class="dtnava">Home</a></li>
+        <li id="dtabout" class="dtnavli dtli dtdropdown">
+          <a class="dtdropbtn">About Us</a>
+          <div class="dtdropdown-content">
+            <a id="dtannouncements" class="dtlia">News</a>
+            <a id="dtcontactus" class="dtlia">Contact Us</a>
+            <a id="dtactivities" class="dtlia">Activities</a>
+            <a id="dtcurriculum" class="dtlia">Curriculum</a>
+            <a id="dtourfacility" class="dtlia">Our Facility</a>
+          </div>
+        </li>
+        <li id="dtrates" class="dtnavli"><a class="dtnava">Registration & Rates</a></li>
+        <li id="dtpayment" class="dtnavli"><a class="dtnava">Payment</a></li>
+        <li><a href="https://twitter.com/mgdaycare" class="hidden-xs dtnavsocial fa fa-twitter"> </a></li>
+        <li><a href="https://www.facebook.com/mothergoosedaycare" class="hidden-xs dtnavsocial fa fa-facebook"></a></li>
+        <li class="dtnavphone white hidden-xs"><a style="padding: 0px 0px;" href="tel:15012687019" class="dtnavphone"><strong>(501) 268-7019</strong></a></li>
+      </ul>
+      </nav>
+      <!-- MOBILE NAV BAR -->
+      <nav class="hidden-lg hidden-md">
         <ul class="navMenu">
-        <li id="home" class="navMainButton"><a>Home</a></li>
+        <li id="home" class="navMainButton" style="margin-left:-20px;"><a>Home</a></li>
         <li id="rates" class="navMainButton"><a>Registration</a></li>
         <li id="payment" class="navMainButton"><a>Pay</a></li>
         <li id="about" class="">
+
           <i class="fa fa-bars navDropButton" aria-hidden="true"></i>
           <div class="subMenu">
 
@@ -33,6 +55,10 @@
             <a id="activities" class="navSubButton">Activities</a>
             <a id="curriculum" class="navSubButton">Curriculum</a>
             <a id="ourfacility" class="navSubButton">Our Facility</a>
+            <a href="15012687019" class="navSubButton phone">(501) 268 7019</a>
+            <a href="https://www.facebook.com/mothergoosedaycare" class="fa fa-facebook navSubButton"></a>
+            <a href="https://twitter.com/mgdaycare" class="fa fa-twitter navSubButton"> </a>
+
 
           </div>
         </li>
