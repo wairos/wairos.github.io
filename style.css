@@ -317,7 +317,8 @@ a.dtnavphone:hover {
 
 .navDropButton {
   color:white;
-
+  padding-top:15px;
+  padding-right:25px;
   float: right;
   cursor:pointer;
 }
