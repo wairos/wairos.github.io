@@ -5,10 +5,6 @@
     <title>Shirley's Mother Goose</title>
   </head>
   <body>
-    <!-- BETTER BEGINNINGS BANNER -->
-      <div style="background-color:rgb(150, 150, 150);margin-top:-20px;">
-        <h2 class="textCenter" style="color:white; font-family:'Open Sans';padding:.2em 0 .25em 0;">We are a <span><a class="link" href="http://www.arbetterbeginnings.com/" target="_blank">Better Beginnings</a></span>-certified licensed childcare facility in Searcy, Arkansas.</h2>
-      </div>
       <!-- Editable ANNOUNCEMENT AREA -->
       <div id="programInfo" class="container containerWidth">
         <cms:editable name='announcementarea' type='richtext'>
