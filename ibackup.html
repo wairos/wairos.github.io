@@ -20,23 +20,23 @@
   <body>
     <!-- NAV BAR -->
       <nav>
-        <ul class="navMenu">
-        <li id="home" class="navMainButton"><a>Home</a></li>
-        <li id="rates" class="navMainButton"><a>Registration</a></li>
-        <li id="payment" class="navMainButton"><a>Pay</a></li>
-        <li id="about" class="">
-          <i class="fa fa-bars navDropButton" aria-hidden="true"></i>
-          <div class="subMenu">
-
-            <a id="announcements" class="navSubButton">News</a>
-            <a id="contactus" class="navSubButton">Contact Us</a>
-            <a id="activities" class="navSubButton">Activities</a>
-            <a id="curriculum" class="navSubButton">Curriculum</a>
-            <a id="ourfacility" class="navSubButton">Our Facility</a>
-
+        <ul class="navul">
+        <li id="home" class="navli active"><a class="nava">Home</a></li>
+        <li id="about" class="navli dropdown">
+          <a class="dropbtn">About</a>
+          <div class="dropdown-content">
+            <a id="announcements">News</a>
+            <a id="contactus">Contact Us</a>
+            <a id="activities">Activities</a>
+            <a id="curriculum">Curriculum</a>
+            <a id="ourfacility">Our Facility</a>
           </div>
         </li>
-
+        <li id="rates" class="navli"><a>Registration</a></li>
+        <li id="payment" class="navli"><a>Pay</a></li>
+        <li><a href="https://twitter.com/mgdaycare" class="hidden-xs navsocial fa fa-twitter"> </a></li>
+        <li><a href="https://www.facebook.com/mothergoosedaycare" class="hidden-xs navsocial fa fa-facebook"></a></li>
+        <li class="navphone white hidden-xs"><a style="padding: 0px 0px;" href="tel:15012687019"><strong>(501) 268-7019</strong></a></li>
       </ul>
       </nav>
       <div id="header"></div>

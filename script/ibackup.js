@@ -3,11 +3,6 @@ $(document).ready(function (){
   $("#header").addClass("hideheader");
   $("#content").load("indexfile.php");
   $("#footer").load("footer.php");
-  $(".subMenu").hide();
-
-  $(".navDropButton").on(("tap","click"), function(){
-    $(".subMenu").toggle();
-  });
 
   $("#home").on(("tap","click"),function () {
     $("#header").addClass("hideheader");
@@ -21,7 +16,9 @@ $(document).ready(function (){
 
   $("#contactus").on(("tap","click"),function () {
     $("#header").removeClass("hideheader");
-    $(".subMenu").toggle();
+    $("li").removeClass("active");
+    $("a").removeClass("active");
+    $("#about").addClass("active");
     $(this).addClass("active");
     $("#content").load("contactus.php");
     $("#footer").hide();
@@ -29,14 +26,19 @@ $(document).ready(function (){
   });
   $("#activities").on(("tap","click"),function () {
     $("#header").removeClass("hideheader");
-    $(".subMenu").toggle();
+    $("li").removeClass("active");
+    $("a").removeClass("active");
+    $("#about").addClass("active");
+    $(this).addClass("active");
     $("#content").load("activities.php");
     $("#footer").show();
     $(document).scrollTop(0);
   });
   $("#curriculum").on(("tap","click"),function () {
     $("#header").removeClass("hideheader");
-    $(".subMenu").toggle();
+    $("li").removeClass("active");
+    $("a").removeClass("active");
+    $("#about").addClass("active");
     $(this).addClass("active");
     $("#content").load("curriculum.php");
     $("#footer").show();
@@ -45,14 +47,20 @@ $(document).ready(function (){
 
   $("#ourfacility").on(("tap","click"),function () {
     $("#header").removeClass("hideheader");
-    $(".subMenu").toggle();
+    $("li").removeClass("active");
+    $("a").removeClass("active");
+    $("#about").addClass("active");
+    $(this).addClass("active");
     $("#content").load("ourfacility.php");
     $("#footer").show();
     $(document).scrollTop(0);
   });
   $("#announcements").on(("tap","click"),function () {
     $("#header").removeClass("hideheader");
-    $(".subMenu").toggle();
+    $("li").removeClass("active");
+    $("a").removeClass("active");
+    $("#about").addClass("active");
+    $(this).addClass("active");
     $("#content").load("announcements.html");
     $("#footer").show();
     $(document).scrollTop(0);

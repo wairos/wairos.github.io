@@ -112,7 +112,112 @@ a {
   text-decoration: none;
   margin: 2px 2px;
 }
+.navul {
+  list-style: none;
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  background-color:rgb(128,128,128);
+  background-color:rgba(128,128,128,.8);
+  position:fixed;
+  top: 0;
+  width:100%;
+  z-index:1;
+}
+.navli {
+  float:left;
+  text-decoration: none;
+  cursor:pointer;
+}
+.navli:active {
+  color:white;
+  text-decoration:none;
+}
+.nava {
+  display:block;
+  color:white;
+  text-align:center;
+  padding:14px 16px;
+  text-decoration: none;
+}
+.nava a {
+  text-decoration: none;
+  color:white;
+}
+.navsocial {
+  float: right;
+  display:inline-block;
+  margin:7px 5px;
+}
+.navphone {
+  float: right;
+  display: block;
+  padding: 14px 16px;
+}
+.nava:hover .nava:active {
+  color:white;
+  background-color:rgb(12, 151, 107);
+  text-decoration: none;
+}
+.nava:active {
+  text-decoration: none;
+  color: white;
+}
+.active {
+  background-color: rgb(244, 81, 165);
+  background-color:rgba(244, 81, 165,5);
+  text-decoration: none;
+  color:white;
+}
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
 
+li a:hover .dropdown:hover .dropbtn {
+    color:white;
+    background-color:rgb(12, 151, 107) ;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+a:active {
+  text-decoration:none;
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: rgb(12, 151, 107);
+    min-width: 150px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    cursor:pointer;
+}
+
+.dropdown-content a:hover, .dropdown-content a:active {
+    background-color: #f1f1f1;
+    color:grey;
+    cursor:pointer;
+}
+
+.dropdown:hover .dropdown-content, .dropdown:active .dropdown-content {
+    display: block;
+}
 .calendarWidth {
   max-width: 600px;
 }
@@ -180,41 +285,6 @@ a {
 .halfway {
   padding-top:30%;
 
-}
-.navMenu {
-  list-style: none;
-  position: fixed;
-  background-color: rgba(125,125,125,.8);
-  width:100%;
-  z-index: 2;
-}
-.navMainButton {
-  display:inline-block;
-  padding:10px;
-  float:left;
-}
-.navMainButton a {
-  color:white;
-  text-decoration: none;
-}
-.navDropButton {
-
-}
-.navDropButton {
-  color:white;
-  padding:10px;
-  float: right;
-}
-.subMenu a {
-  display:inline-block;
-  color:white;
-
-}
-.navSubButton{
-  width: 100%;
-  padding:10px;
-  float: left;
-  display: block;
 }
 
 @media only screen and (min-width:992px) {
