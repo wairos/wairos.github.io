@@ -1,15 +1,102 @@
 <!DOCTYPE html>
 <html>
+<head>
+  <title>Header</title>
+  <style type="text/css">
+  .header {
+    padding-top:3.5em;
+    padding-bottom:1em;
+
+  }
+  .headerWidth {
+    max-width:1400px;
+  }
+  .headerText {
+    margin-top:3em;
+  }
+  .goose {
+    width:150px;
+  }
+  .smg {
+    font-size:3.2em;
+
+  }
+
+  .pd {
+    margin-top:-10px;
+    margin-bottom:10px;
+
+  }
+  .phoneNumber {
+    margin-bottom:-.5px;
+  }
+  @media only screen and (max-width:1200px) {
+    .smg {
+      font-size:2.6em;
+    }
+    .pd {
+      font-size:1.8em;
+    }
+  }
+  @media only screen and (max-width:990px){
+    .headerText {
+      margin-top:0px;
+    }
+    .smg {
+      margin-top:1px;
+    }
+  }
+  @media only screen and (max-width:550px){
+    .smg {
+      font-size:2.3em;
+    }
+    .pd {
+      font-size:1.5em;
+    }
+    .goose {
+      width:120px;
+      height:auto;
+    }
+  }
+  @media only screen and (max-width:460px){
+    .smg{
+      font-size:2em;
+    }
+    .pd {
+      font-size:1em;
+    }
+    .goose {
+      width:100px;
+      height:auto;
+    }
+  }
+  @media only screen and (max-width:410px){
+    .smg{
+      font-size:1.5em;
+    }
+    .pd {
+      font-size:1em;
+    }
+    .phoneNumber {
+      font-size:.9em;
+    }
+    .goose {
+      width:80px;
+      height:auto;
+    }
+  }
+  </style>
+</head>
 <header class="greenBG header">
- <div class="container text-center" style="max-width:1400px;">
+ <div class="container text-center">
   <div class="row">
    <div  class="col-md-offset-1 col-md-1 col-sm-12 col-xs-12">
-    <img class="" src="img/Mother+GooseNew).png" style="width:150px;"/>
+    <img class="goose" src="img/Mother+GooseNew).png"/>
    </div>
-   <div class="col-md-8 col-sm-12 col-xs-12  white">
-    <h1 id="shirleys" class="" style="font-size:3.2em;"><strong>Shirley's Mother Goose</strong></h1>
-    <h2 class="" style="margin-top:-10px;margin-bottom:10px;">Preschool & Daycare</h2>
-    <p class="pink" style="margin-bottom:-.5px;"><strong>(501) 268-7019</strong></p>
+   <div class="col-md-8 col-sm-12 col-xs-12  white headerText">
+    <h1 class="smg"><strong>Shirley's Mother Goose</strong></h1>
+    <h2 class="pd">Preschool & Daycare</h2>
+    <p class="pink phoneNumber"><strong>(501) 268-7019</strong></p>
     <p class="hidden-sm hidden-xs darkGreen text-center">M-F 6:00 a.m. to 6:00 p.m.<br>1314 East River Ave.<br>Searcy, AR 72143</p>
    </div>
   </div>

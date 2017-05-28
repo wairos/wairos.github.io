@@ -126,11 +126,7 @@ a {
   height:300px;
   width:auto;
 }
-.header {
-  padding-top:7em;
-  padding-bottom:1em;
 
-}
 .schedule a {
   width:100%;
 }
@@ -352,34 +348,12 @@ a.dtnavphone:hover {
   color:rgb(244, 81, 165);
   background-color: inherit;
 }
-@media only screen and (min-width:992px) {
-  #shirleys {
-    margin-top: 55px;
-    padding:0 0 0 50px;
-  }
 
-
-}
-@media only screen and (min-width: 432px) {
-  .header {
-    padding-bottom:1em;
-
-  }
-
-}
-@media only screen and (min-width: 768px) {
-  .hideheader {
-    display: none;
-  }
-}
 @media only screen and (max-width: 768px) {
   .paralax {
     display:none;
   }
   .paralax2 {
-    display:none;
-  }
-  .gooseBar {
     display:none;
   }
 }
