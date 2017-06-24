@@ -337,18 +337,14 @@ a.dtnavphone:hover {
 }
 .navSubButton{
   width: 100%;
-  padding:15px 0 15px 30px;
+  padding:10px 0 5px 30px;
   float: left;
   display: block;
-  position:relative;
-  top:20px;
 }
 
 .navSubButton.phone {
   padding:10px;
-  text-align:center;
-  position: relative;
-  top:30px;
+  text-align: center;
 }
 .navSubButton.fa {
   max-width: 45%;
@@ -357,19 +353,11 @@ a.dtnavphone:hover {
   border-radius:0;
 
 }
-.facebook, .twitter {
-  float:left;
-  width:50px;
-}
 .facebook {
-  position: relative;
-  top:-10px;
-  left:240px;
+  float: left;
 }
 .twitter {
-  position: relative;
-  top:-10px;
-  left:355px;
+  float: right;
 }
 
 .active {
