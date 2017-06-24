@@ -50,11 +50,11 @@
           <div class="col-xs-6 text-center">
 
             <h3 class="darkGreen" style="font-family:'Open Sans';">Our Commitment</h3>
-            <p style="text-align:left; font-family:'Roboto';">Shirley's Mother Goose provides quality and affordable childcare to children 6 weeks and older.</p>
+            <p style="text-align:center; font-family:'Roboto';">Shirley's Mother Goose provides quality and affordable childcare to children 6 weeks and older.</p>
           </div>
-          <div class="col-xs-6 text-center">
+          <div class="col-xs-6 text-center"  style="border-left:2px solid rgba(180,180,180,.4);">
             <h3 class="darkGreen">Our Program</h3>
-            <p style="text-align:left;">Shirley's Mother Goose is a licensed and Better Beginnings certified childcare facility that uses a theme-based approach to learning.</p>
+            <p style="text-align:center;">Shirley's Mother Goose is a licensed and Better Beginnings certified childcare facility that uses a theme-based approach to learning.</p>
           </div>
         </div>
       </div>

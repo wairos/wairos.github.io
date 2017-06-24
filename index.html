@@ -5,17 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Shirley's Mother Goose</title>
   <link rel="shortcut icon" href="favicon.ico" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="script/index.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
   <body>
     <!-- DESKTOP NAV BAR -->
@@ -36,9 +30,9 @@
         <li id="dtpayment" class="dtnavli"><a class="dtnava">Payment</a></li>
         <li><a href="https://twitter.com/mgdaycare" class="hidden-xs dtnavsocial fa fa-twitter"> </a></li>
         <li><a href="https://www.facebook.com/mothergoosedaycare" class="hidden-xs dtnavsocial fa fa-facebook"></a></li>
-        <li class="dtnavphone white hidden-xs"><a style="padding: 0px 0px;" href="tel:15012687019" class="dtnavphone"><strong>(501) 268-7019</strong></a></li>
+        <li class="dtnavphone white hidden-xs"><a style="padding: 0px 0px;" href="tel:+15012687019" class="dtnavphone"><strong>(501) 268-7019</strong></a></li>
       </ul>
-      </nav>
+    </nav>
       <!-- MOBILE NAV BAR -->
       <nav class="hidden-lg hidden-md">
         <ul class="navMenu">
@@ -47,7 +41,8 @@
         <li id="payment" class="navMainButton"><a>Pay</a></li>
         <li id="about" class="">
 
-          <i class="fa fa-bars navDropButton" aria-hidden="true"></i>
+          <i id="bars" class="fa fa-bars navDropButton" aria-hidden="true"></i>
+          <i id="xbutton" class="fa fa-window-close-o xbutton" aria-hidden="true"></i>
           <div class="subMenu">
 
             <a id="announcements" class="navSubButton">News</a>
@@ -55,24 +50,22 @@
             <a id="activities" class="navSubButton">Activities</a>
             <a id="curriculum" class="navSubButton">Curriculum</a>
             <a id="ourfacility" class="navSubButton">Our Facility</a>
-            <a href="15012687019" class="navSubButton phone">(501) 268 7019</a>
-            <div class="row" style="textCenter">
-              <div class="container col-xs-6">
-                <a href="https://www.facebook.com/mothergoosedaycare" class="fa fa-facebook navSubButton col-xs-6"></a>
-              </div>
-              <div class="container col-xs-6">
-                <a href="https://twitter.com/mgdaycare" class="fa fa-twitter navSubButton col-xs-6"></a>
-              </div>
-          </div>
+            <a href="tel:+15012687019" class="navSubButton phone">(501) 268 7019</a>
+            <a href="https://www.facebook.com/mothergoosedaycare" class="fa fa-facebook navSubButton facebook"></a>
+            <a href="https://twitter.com/mgdaycare" class="fa fa-twitter navSubButton twitter"></a>
 
           </div>
+
         </li>
 
       </ul>
       </nav>
-      <div id="header"></div>
+      <div id="header" style="box-shadow:5px 2px 20px grey;"></div>
       <div id="content"></div>
       <div id="footer"></div>
-
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="script/index.js"></script>
   </body>
 </html>

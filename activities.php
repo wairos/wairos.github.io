@@ -1,6 +1,30 @@
 
 <!DOCTYPE html>
 <html>
+  <head>
+    <style type="text/css">
+      .schedule li {
+        padding:10px;
+        background-color: grey;
+      }
+      .schedule li:hover {
+        background-color: rgb(12, 151, 107);
+        cursor:pointer;
+      }
+      .schedule a {
+        color:white;
+        text-decoration: none;
+      }
+      .schedule a:hover {
+        color:white;
+        text-decoration: none;
+      }
+      .border {
+        border-top: 1px solid white;
+      }
+
+    </style>
+  </head>
   <body>
     <cms:editable name='activity' type='richtext'>
       <div class="container containerWidth">
@@ -10,19 +34,19 @@
               <h2>Schedules</h2>
               <ul class="schedule">
                 <div class="row">
-                <div class="col-xs-6">
-                <li class="pink"><a href="https://db.tt/4SLTXFwh">Nursery</a></li>
-                <li><a href="https://db.tt/zajiJWNS">Waddler</a></li>
-                <li><a href="https://db.tt/07Cn1KI3">Toddler 1</a></li>
-                <li><a href="https://db.tt/dtc6ZPzo">Toddler 2</a></li>
-                <li><a href="https://db.tt/A7lCFRrn">Preschool 2</a></li>
+                <div class="col-xs-6 schedule">
+                <a href="https://db.tt/4SLTXFwh"><li>Nursery</li></a>
+                <a href="https://db.tt/zajiJWNS"><li class="border">Waddler</li></a>
+                <a href="https://db.tt/07Cn1KI3"><li class="border">Toddler 1</li></a>
+                <a href="https://db.tt/dtc6ZPzo"><li class="border">Toddler 2</li></a>
+                <a href="https://db.tt/A7lCFRrn"><li class="border">Preschool 2</li></a>
                 </div>
-                <div class="col-xs-6">
-                <li><a href="https://db.tt/Grm0T5BO">Preschool 3</a></li>
-                <li><a href="https://db.tt/kf58cwoP">Pre-K 4</a></li>
-                <li><a href="https://db.tt/I6yv4K1z">Pre-K 5</a></li>
-                <li><a href="#">School Age</a></li>
-                <li><a href="#">School Age (Summer)</a></li>
+                <div class="col-xs-6 schedule">
+                <a href="https://db.tt/Grm0T5BO"><li class="border">Preschool 3</li></a>
+                <a href="https://db.tt/kf58cwoP"><li class="border">Pre-K 4</li></a>
+                <a href="https://db.tt/I6yv4K1z"><li class="border">Pre-K 5</li></a>
+                <a href="#"><li class="border">School Age</li></a>
+                <a href="#"><li class="border">School Age (Summer)</li></a>
                </div>
              </div>
               </ul>

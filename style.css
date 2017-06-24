@@ -36,7 +36,7 @@ a {
   color:rgb(150, 150, 150);
 }
 .lineheight {
-  line-height: .75em;
+  line-height: 1.2em;
 }
 .link:visited {
     color: rgb(244, 81, 165);
@@ -94,7 +94,6 @@ a {
 .fa {
   width: 35px;
   text-align:center;
-  font-size: 50px;
   padding: 10px;
   text-decoration: none;
   margin: 2px 2px;
@@ -107,7 +106,6 @@ a {
 .faa {
   width: 35px;
   text-align:center;
-  font-size: 50px;
   padding: 10px;
   text-decoration: none;
   margin: 2px 2px;
@@ -134,8 +132,6 @@ a {
   color:rgb(244, 81, 165);;
 }
 .schedule li {
-  background-color: rgb(125,125,125);
-  background-color: rgba(125,125,125,.5);
   list-style:none;
   text-align:center;
 
@@ -313,33 +309,69 @@ a.dtnavphone:hover {
 
 .navDropButton {
   color:white;
-  padding-top:15px;
-  padding-right:25px;
+  position: relative;
+  right:15px;
+  top:2px;
   float: right;
   cursor:pointer;
+  font-size: 20px;
+}
+.xbutton {
+  float: right;
+  color:white;
+  position: relative;
+  top:2px;
+  right:17px;
+  font-size: 20px;
+
+}
+.subMenu {
+  width:100%;
 }
 .subMenu a {
-  display:inline-block;
+  display:block;
   color:white;
   text-decoration: none;
+
 
 }
 .navSubButton{
   width: 100%;
-  padding:15px 10px 15px 30px;
+  padding:15px 0 15px 30px;
   float: left;
   display: block;
+  position:relative;
+  top:20px;
 }
+
 .navSubButton.phone {
   padding:10px;
   text-align:center;
+  position: relative;
+  top:30px;
 }
 .navSubButton.fa {
-  max-width: 100%;
+  max-width: 45%;
   text-align: center;
   padding:10px;
   border-radius:0;
+
 }
+.facebook, .twitter {
+  float:left;
+  width:50px;
+}
+.facebook {
+  position: relative;
+  top:-10px;
+  left:240px;
+}
+.twitter {
+  position: relative;
+  top:-10px;
+  left:355px;
+}
+
 .active {
   background-color:rgb(244, 81, 165);
   background-color:rgba(244, 81, 165,.9);
@@ -347,6 +379,8 @@ a.dtnavphone:hover {
 .navDropButton.active {
   color:rgb(244, 81, 165);
   background-color: inherit;
+
+
 }
 
 @media only screen and (max-width: 768px) {

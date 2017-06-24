@@ -5,7 +5,7 @@
     <h2 class="darkGreen">Payment Methods</h2>
     <p>Shirley's Mother Goose Preschool and Daycare Center accepts payment via <strong>cash</strong>, <strong>check</strong>, <strong>credit and debit card on-site</strong> and <strong>web payments via PayPal</strong>.</p>
     <div class="container containerWidth">
-      <p>To pay using <strong>PayPal</strong>:</p>
+      <p>To pay using <i class="fa fa-cc-paypal" style="font-size:3em;position:relative;top:10px;" aria-hidden="true"></i>:</p>
       <ol>
         <li>Enter your child's full name in the box below.</li>
         <li>Choose "Buy Now".</li>

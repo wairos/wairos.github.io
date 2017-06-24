@@ -1,6 +1,21 @@
 <?php require_once( 'edit/cms.php' ); ?>
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>curriculum</title>
+    <style rel="stylesheet" type="text/css">
+    li p {
+      text-align: center;
+    }
+    .link {
+      text-align: left;
+    }
+    p:nth-child(4){
+      position: relative;
+      top: 50px;
+    }
+    </style>
+  </head>
   <body>
     <cms:editable name='curriculum_info' type='richtext'>
   <div class="container headroom containerWidth">

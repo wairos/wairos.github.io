@@ -3,9 +3,10 @@
 <head>
   <title>Header</title>
   <style type="text/css">
+
   .header {
-    padding-top:3.5em;
-    padding-bottom:1em;
+    padding-top:60px;
+    padding-bottom:0;
 
   }
   .headerWidth {
@@ -16,73 +17,93 @@
   }
   .goose {
     width:150px;
+    float:left;
+    position: relative;
+    left:165px;
+    width:120px;
+    height:auto;
   }
   .smg {
+    font-weight:8900;
     font-size:3.2em;
+
 
   }
 
   .pd {
+    font-family:helvetica;
+    font-weight: bold;
     margin-top:-10px;
     margin-bottom:10px;
-
+    padding-right:29px;
   }
+
   .phoneNumber {
     margin-bottom:-.5px;
   }
+
+  .smg,.pd,.phoneNumber,.details {
+    position:relative;
+    top:-20px;
+    left:-60px;
+  }
+
   @media only screen and (max-width:1200px) {
-    .smg {
-      font-size:2.6em;
-    }
-    .pd {
-      font-size:1.8em;
-    }
-  }
-  @media only screen and (max-width:990px){
-    .headerText {
-      margin-top:0px;
-    }
-    .smg {
-      margin-top:1px;
-    }
-  }
-  @media only screen and (max-width:550px){
-    .smg {
-      font-size:2.3em;
-    }
-    .pd {
-      font-size:1.5em;
-    }
     .goose {
+      position:relative;
+      left:40px;
       width:120px;
       height:auto;
     }
   }
-  @media only screen and (max-width:460px){
-    .smg{
-      font-size:2em;
+  @media only screen and (max-width:990px){
+    .goose {
+      position:relative;
+      left:95px;
+      top:8px;
+      width:90px;
+      height:auto;
+    }
+    .smg {
+      font-size:200%;
     }
     .pd {
-      font-size:1em;
+      font-size:100%;
+      padding-right:17px;
     }
-    .goose {
-      width:100px;
-      height:auto;
+    .phoneNumber,.details {
+      font-size: 90%;
+
+    }
+    .smg,.pd,.phoneNumber,.details {
+      position:relative;
+      top:-20px;
+      left:-40px;
     }
   }
+  @media only screen and (max-width:775px){
+    .goose{
+      display:none;
+    }
+    .smg,.pd,.phoneNumber,.details {
+      position:relative;
+      left:0px;
+      top:-20px;
+    }
+  }
+  @media only screen and (max-width:550px){
+
+  }
+  @media only screen and (max-width:460px){
+
+  }
   @media only screen and (max-width:410px){
-    .smg{
-      font-size:1.5em;
+    .smg {
+      font-size:170%;
     }
-    .pd {
-      font-size:1em;
-    }
-    .phoneNumber {
-      font-size:.9em;
-    }
-    .goose {
-      width:80px;
-      height:auto;
+    .header{
+      padding-bottom:0;
+
     }
   }
   </style>
@@ -90,16 +111,16 @@
 <header class="greenBG header">
  <div class="container text-center">
   <div class="row">
-   <div  class="col-md-offset-1 col-md-1 col-sm-12 col-xs-12">
+   <div  class="">
     <img class="goose" src="img/Mother+GooseNew).png"/>
    </div>
-   <div class="col-md-8 col-sm-12 col-xs-12  white headerText">
-    <h1 class="smg"><strong>Shirley's Mother Goose</strong></h1>
+   <div class="white headerText">
+    <h1 class="smg">Shirley's Mother Goose</h1>
     <h2 class="pd">Preschool & Daycare</h2>
     <p class="pink phoneNumber"><strong>(501) 268-7019</strong></p>
-    <p class="hidden-sm hidden-xs darkGreen text-center">M-F 6:00 a.m. to 6:00 p.m.<br>1314 East River Ave.<br>Searcy, AR 72143</p>
+    <p class="darkGreen text-center details">M-F 6:00 a.m. to 6:00 p.m.<br>1314 East River Ave.<br>Searcy, AR 72143</p>
    </div>
-  </div>
+  </div> 
  </div>
 </header>
 </html>
