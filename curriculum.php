@@ -16,7 +16,7 @@
 <cms:editable name='the_curriculum' type='richtext'>
   <div class="container headroom">
     <h2 class="darkGreen text-center">Curriculum Calendar</h2>
-    <div class="container calendarWidth">
+    <div class="calendarWidth">
       <h3 class="text-center">August</h3>
       <ul style="list-style:none;">
         <div class="row">
@@ -56,7 +56,7 @@
       </ul>
       <hr>
     </div>
-    <div class="container calendarWidth">
+    <div class=" calendarWidth">
       <h3 class="text-center">September</h3>
       <ul style="list-style:none;">
         <div class="row">
@@ -96,7 +96,7 @@
       </ul>
       <hr>
     </div>
-    <div class="container calendarWidth">
+    <div class=" calendarWidth">
       <h3 class="text-center">October</h3>
       <ul style="list-style:none;">
         <div class="row">
@@ -144,7 +144,7 @@
       </ul>
       <hr>
     </div>
-    <div class="container calendarWidth">
+    <div class=" calendarWidth">
       <h3 class="text-center">November</h3>
       <ul style="list-style:none;">
         <div class="row">
@@ -184,7 +184,7 @@
       </ul>
       <hr>
     </div>
-    <div class="container calendarWidth">
+    <div class=" calendarWidth">
       <h3 class="text-center">December</h3>
       <ul style="list-style:none;">
         <div class="row">
@@ -224,7 +224,7 @@
       </ul>
       <hr>
     </div>
-    <div class="container calendarWidth">
+    <div class=" calendarWidth">
       <h3 class="text-center">January</h3>
       <ul style="list-style:none;">
         <div class="row">
@@ -264,7 +264,7 @@
       </ul>
       <hr>
     </div>
-    <div class="container calendarWidth">
+    <div class=" calendarWidth">
       <h3 class="text-center">Febuary</h3>
       <ul style="list-style:none;">
         <div class="row">
@@ -304,7 +304,7 @@
       </ul>
       <hr>
     </div>
-    <div class="container calendarWidth">
+    <div class=" calendarWidth">
       <h3 class="text-center">March</h3>
       <ul style="list-style:none;">
         <div class="row">
@@ -344,7 +344,7 @@
       </ul>
       <hr>
     </div>
-    <div class="container calendarWidth">
+    <div class=" calendarWidth">
       <h3 class="text-center">April</h3>
       <ul style="list-style:none;">
         <div class="row">
@@ -384,7 +384,7 @@
       </ul>
       <hr>
     </div>
-    <div class="container calendarWidth">
+    <div class=" calendarWidth">
       <h3 class="text-center">May</h3>
       <ul style="list-style:none;">
         <div class="row">
@@ -424,7 +424,7 @@
       </ul>
       <hr>
     </div>
-    <div class="container calendarWidth">
+    <div class=" calendarWidth">
       <h3 class="text-center">June</h3>
       <ul style="list-style:none;">
         <div class="row">
@@ -464,7 +464,7 @@
       </ul>
       <hr>
     </div>
-    <div class="container calendarWidth">
+    <div class=" calendarWidth">
       <h3 class="text-center">July</h3>
       <ul style="list-style:none;">
         <div class="row">
