@@ -10,33 +10,69 @@ h4 {
 h1, h2, h3, h4, h5, p {
   color: rgb(50,50,50);
 }
+
+.headroom {
+  margin-top: 100px;
+}
+
 .top-info {
   margin:0 0 90px 0;
 }
 
-#scaleView {
+.viewer {
+  max-width:812px;
+  background-color:white;
+  border-radius:5px;
+  margin:40px auto;
+  border:1px solid black;
+}
+
+.viewer-info {
   font-family: "Roboto";
   letter-spacing: 1px;
   background-color:rgb(180,180,180);
   color:white;
+  text-align: center;
 }
 
-#Key {
+.viewer-heading {
   font-family:Anton;
   font-size:160%;
+  text-align: center;
 }
 
 ul {
   font-family: Roboto;
 }
 
+.jumbotron {
+  margin-top:5em;
+  background-color:rgb(209, 239, 255);
+  border:2px solid white;
+}
+
+.highlight-bar {
+  width:100%;
+  background-color: rgba( 80, 80, 80,.7);
+  text-align: center;
+}
+
+.highlight-bar h1 {
+  font-family: Anton;
+  color: white;
+  padding: 5px 10px;
+}
 
 .btn-primary {
   font-family:Anton;
-  width: 3em;
   cursor:pointer;
   margin-bottom:.3em;
 }
+
+.small-width {
+  width: 3em;
+}
+
 .btn-secondary {
   font-family:Roboto;
 }
@@ -82,4 +118,8 @@ ul {
 }
 .chordButtons {
   margin-bottom:1em;
+}
+
+.help-text {
+  display:none;
 }

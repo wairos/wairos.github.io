@@ -1,4 +1,21 @@
 $(document).ready(function() {
+
+//HELP BUTTON FUNCTIONS
+  $("#help-button").on(("tap","click"),function() {
+    $(".help-text").css("display", "block");
+    $("#help-button").css("display", "none");
+    $("#hide-button").css("display", "block");
+  });
+
+  $("#hide-button").on(("tap","click"),function() {
+    $(".help-text").css("display", "none");
+    $("#help-button").css("display", "block");
+    $("#hide-button").css("display", "none");
+  });
+
+keyNum = 0;
+
+//SCALES ARRAY
   var Scales = [
     {
       index: "0",
@@ -181,7 +198,9 @@ $(document).ready(function() {
       seventh: "D"
     }
   ];
-  var clickCount = 0;
+
+
+  var clickCount = 0; //CONTROLS TRIAD BUTTONS BY REARRANGING NOTES
 
   function getChord() {
     if (clickCount === 0) {
@@ -347,31 +366,6 @@ $(document).ready(function() {
   $("#viButton").click(function() {
     viclickCount++;
     getviChord();
-  });
-
-  var cCFrets = 0;
-
-  function getFrets() {
-    if (cCFrets === 0) {
-      $("#guitarTitle").html("Guitar Fret Board");
-      $("#guitarFretBoard").attr(
-        "src",
-        "#"
-      );
-    } else if (cCFrets === 1) {
-      $("#guitarTitle").html("Bass Fret Board");
-      $("#guitarFretBoard").attr(
-        "src",
-        "#"
-      );
-    } else if (cCFrets > 1) {
-      cCFrets = 0;
-      getFrets();
-    }
-  }
-  $("#guitarTitle").click(function() {
-    cCFrets++;
-    getFrets();
   });
 
   function getKey(num) {
@@ -601,6 +595,11 @@ $(document).ready(function() {
     ivclickCount = 0;
     vclickCount = 0;
     viclickCount = 0;
+    keyNum = 0;
+    update();
+    changeKey();
+    $("#ChordViewHeading").html("Notes and Triads");
+    $("#ModeViewHeading").html("Modes");
     $("#Key").html("Major Key");
     $("#scaleView").html("Notes in the key");
     $("#iButton").click(function() {
@@ -630,48 +629,219 @@ $(document).ready(function() {
   });
 
   $("#button").click(function() {
+    keyNum = 0;
     getKey(0);
+    changeKey();
+    return keyNum;
   });
   $("#dbutton").click(function() {
+    keyNum = 1;
     getKey(1);
+    changeKey();
+    return keyNum;
   });
   $("#ebutton").click(function() {
+    keyNum = 2;
     getKey(2);
+    changeKey();
+    return keyNum;
   });
   $("#fbutton").click(function() {
+    keyNum = 3;
     getKey(3);
+    changeKey();
+    return keyNum;
   });
   $("#gbutton").click(function() {
+    keyNum = 4;
     getKey(4);
+    changeKey();
+    return keyNum;
   });
   $("#abutton").click(function() {
+    keyNum = 5;
     getKey(5);
+    changeKey();
+    return keyNum;
   });
   $("#bbutton").click(function() {
+    keyNum = 6;
     getKey(6);
+    changeKey();
+    return keyNum;
   });
   $("#csbutton").click(function() {
+    keyNum = 7;
     getKey(7);
+    changeKey();
+    return keyNum;
   });
   $("#fsbutton").click(function() {
+    keyNum = 8;
     getKey(8);
+    changeKey();
+    return keyNum;
   });
   $("#gbbutton").click(function() {
+    keyNum = 9;
     getKey(9);
+    changeKey();
+    return keyNum;
   });
   $("#abbutton").click(function() {
+    keyNum = 10;
     getKey(10);
+    changeKey();
+    return keyNum;
   });
   $("#bbbutton").click(function() {
+    keyNum = 11;
     getKey(11);
+    changeKey();
+    return keyNum;
   });
   $("#cbbutton").click(function() {
+    keyNum = 12;
     getKey(12);
+    changeKey();
+    return keyNum;
   });
   $("#dbbutton").click(function() {
+    keyNum = 13;
     getKey(13);
+    changeKey();
+    return keyNum;
   });
   $("#ebbutton").click(function() {
+    keyNum = 14;
     getKey(14);
+    changeKey();
+    return keyNum;
   });
+
+
+  function getMode(num) {
+    var modeNotes = [
+      Scales[num].root + " ",
+      Scales[num].second + " ",
+      Scales[num].third + " ",
+      Scales[num].fourth + " ",
+      Scales[num].fifth + " ",
+      Scales[num].sixth + " ",
+      Scales[num].seventh + " ",
+      Scales[num].root + " ",
+    ];
+    return modeNotes;
+  }
+
+  function getView(g){
+    if(order == 0){
+      view = g[0]+g[1]+g[2]+g[3]+g[4]+g[5]+g[6]+g[7];
+      return view;
+    }
+    if(order == 1){
+      view = g[1]+g[2]+g[3]+g[4]+g[5]+g[6]+g[7]+g[1];
+      return view;
+    }
+    if(order == 2){
+      view = g[2]+g[3]+g[4]+g[5]+g[6]+g[0]+g[1]+g[2];
+      return view;
+    }
+    if(order == 3){
+      view = g[3]+g[4]+g[5]+g[6]+g[0]+g[1]+g[2]+g[3];
+      return view;
+    }
+    if(order == 4){
+      view = g[4]+g[5]+g[6]+g[0]+g[1]+g[2]+g[3]+g[4];
+      return view;
+    }
+    if(order == 5){
+      view = g[5]+g[6]+g[0]+g[1]+g[2]+g[3]+g[4]+g[5];
+      return view;
+    }
+    if(order == 6){
+      view = g[6]+g[0]+g[1]+g[2]+g[3]+g[4]+g[5]+g[6];
+      return view;
+    }
+  }
+
+  function update() {
+    view = getView(g);
+    $("#Mode").html(view.toString().slice(0,2) + " " + modeName);
+    $("#ModeNotes").html(view);
+  }
+
+  function changeKey() {
+    g = getMode(keyNum);
+    order = 0;
+    modeName = "Ionian";
+    $("#ModeViewHeading").html("Modes of " + Scales[keyNum].root + " Major");
+    $("#ChordViewHeading").html("Notes and Triads of " + Scales[keyNum].root + " Major");
+    update();
+  }
+
+
+  g = getMode(keyNum);
+  modeName = "Ionian";
+  order = 0;
+  view = getView(g);
+  update();
+
+  $("#Ionian").on("click", function() {
+    g = getMode(keyNum);
+    order = 0;
+    modeName =  "Ionian";
+    update();
+
+  });
+
+  $("#Dorian").on("click", function() {
+    g = getMode(keyNum);
+    order = 1;
+    modeName = "Dorian";
+    update();
+
+  });
+
+  $("#Phrygian").on("click", function() {
+
+    order = 2;
+    modeName = "Phrygian";
+    update();
+
+  });
+
+  $("#Lydian").on("click", function() {
+
+    order = 3;
+    modeName = "Lydian";
+    update();
+
+  });
+
+  $("#Mixolydian").on("click", function() {
+
+    order = 4;
+    modeName = "Mixolydian";
+    update();
+
+  });
+
+  $("#Aeolian").on("click", function() {
+
+    order = 5;
+    modeName = "Aeolian";
+    update();
+
+  });
+
+  $("#Locrian").on("click", function() {
+
+    order = 6;
+    modeName = "Locrian";
+    update();
+
+  });
+
+
 });
