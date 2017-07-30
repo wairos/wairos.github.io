@@ -11,6 +11,14 @@ h1, h2, h3, h4, h5, p {
   color: rgb(50,50,50);
 }
 
+.white {
+  color: 	#428bca;
+}
+
+.grey {
+  color: rgb(50,50,50);
+}
+
 .headroom {
   margin-top: 100px;
 }
@@ -30,14 +38,15 @@ h1, h2, h3, h4, h5, p {
 .viewer-info {
   font-family: "Roboto";
   letter-spacing: 1px;
-  background-color:rgb(180,180,180);
+  background-color:rgba(80,80,80,.9);
   color:white;
   text-align: center;
+  font-size: 150%;
 }
 
 .viewer-heading {
   font-family:Anton;
-  font-size:160%;
+  font-size:200%;
   text-align: center;
 }
 
@@ -46,18 +55,19 @@ ul {
 }
 
 .jumbotron {
-  margin-top:5em;
-  background-color:rgb(209, 239, 255);
+  margin-top:1em;
+  background-color:rgba(209, 239, 255, .8);
   border:2px solid white;
 }
 
 .highlight-bar {
   width:100%;
   background-color: rgba( 80, 80, 80,.7);
+  background-color: rgba(66, 139, 202, .5);
   text-align: center;
 }
 
-.highlight-bar h1 {
+.highlight-bar h2 {
   font-family: Anton;
   color: white;
   padding: 5px 10px;
