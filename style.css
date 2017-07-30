@@ -58,6 +58,10 @@ ul {
   margin-top:1em;
   background-color:rgba(209, 239, 255, .8);
   border:2px solid white;
+  background: rgba(209, 239, 255, .8), url("img/violin.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .highlight-bar {
