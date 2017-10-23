@@ -1,14 +1,15 @@
 $(document).ready(function() {
-
+  $('.help-text').css("display","block");
+$('.help-text').css("opacity","0");
 //HELP BUTTON FUNCTIONS
   $("#help-button").on(("tap","click"),function() {
-    $(".help-text").css("display", "block");
+    $(".help-text").css("opacity", "1");
     $("#help-button").css("display", "none");
     $("#hide-button").css("display", "block");
   });
 
   $("#hide-button").on(("tap","click"),function() {
-    $(".help-text").css("display", "none");
+    $(".help-text").css("opacity", "0");
     $("#help-button").css("display", "block");
     $("#hide-button").css("display", "none");
   });
