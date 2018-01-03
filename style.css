@@ -46,11 +46,11 @@ h1, h2, h3, h4, h5, p {
 }
 
 .viewer {
-  max-width:812px;
   border-radius:5px;
   margin:0px auto 40px auto;
   border:1px solid black;
   background: rgba(255,255,255,0.8);
+  margin-left: 10px;
 }
 
 .viewer-info {
@@ -134,6 +134,9 @@ background: #0D1C28;
   float:left;
   padding:10px;
   margin:0 auto;
+  background: rgba(255,255,255,0.2);
+  margin-bottom: 5px;
+
 }
 .chord-column-btn {
   width:115px;
