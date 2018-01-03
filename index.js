@@ -597,10 +597,11 @@ keyNum = 0;
     vclickCount = 0;
     viclickCount = 0;
     keyNum = 0;
-    update();
-    changeKey();
-    $("#ChordViewHeading").html("Notes and Triads");
+    $("#Mode").html("Selected Mode");
+    $("#ModeNotes").html("Notes of Selected Mode");
+    $("#ChordViewHeading").html("Scale Notes");
     $("#ModeViewHeading").html("Modes");
+    $("#inversionViewHeading").html("Triads/Inversions");
     $("#Key").html("Major Key");
     $("#scaleView").html("Notes in the key");
     $("#iButton").click(function() {
@@ -776,17 +777,18 @@ keyNum = 0;
     g = getMode(keyNum);
     order = 0;
     modeName = "Ionian";
-    $("#ModeViewHeading").html("Modes of " + Scales[keyNum].root + " Major");
-    $("#ChordViewHeading").html("Notes and Triads of " + Scales[keyNum].root + " Major");
+    // $("#ModeViewHeading").html("Modes of " + Scales[keyNum].root + " Major");
+    // $("#ChordViewHeading").html("Scale Notes of " + Scales[keyNum].root + " Major");
+    // $("#inversionViewHeading").html("Triads/Inversions of " + Scales[keyNum].root + " Major");
     update();
   }
 
 
   g = getMode(keyNum);
-  modeName = "Ionian";
+  modeName = "Modes";
   order = 0;
-  view = getView(g);
-  update();
+  // view = getView(g);
+  // update();
 
   $("#Ionian").on("click", function() {
     g = getMode(keyNum);
