@@ -95,6 +95,7 @@ ul {
   background-color: rgba( 80, 80, 80,.7);
   background-color: rgba(66, 139, 202, .5);
   text-align: center;
+  margin-left: 10px;
 }
 
 .highlight-bar h2 {
