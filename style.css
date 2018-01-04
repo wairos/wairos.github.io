@@ -60,8 +60,8 @@ li p {
 .viewer-info {
   font-family: "Roboto";
   letter-spacing: 1px;
-  background-color:rgba(80,80,80,.9);
-  color:white;
+  /* background-color:rgba(80,80,80,.9); */
+  color:black;
   text-align: center;
   font-size: 125%;
 }
