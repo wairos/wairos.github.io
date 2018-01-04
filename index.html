@@ -44,7 +44,7 @@
       </div>
       </div>
       <div class="feature-container">
-        <div id="scale-box">
+        <div id="scale-box" class="feature">
           <div class="highlight-bar">
             <h2 id="ChordViewHeading">Scale Notes</h2>
           </div>
@@ -55,9 +55,13 @@
             <p id="scaleView" class="viewer-info">Notes of Selected key</p>
           </div>
         </div>
-        <div id="mode-box">
+        <div id="mode-box" class="feature">
           <div class="highlight-bar">
-            <h2 id="ModeViewHeading">Modes</h2>
+            <h2 id="ModeViewHeading">Modes<br><small>Relative | Parallel</small><br>
+            <label class="switch">
+              <input id="relativeSwitch" type="checkbox" name="relativeSwitch">
+              <span class="slider round"></span>
+            </label></h2>
           </div>
           <div class="viewer">
 
@@ -79,7 +83,7 @@
           </div>
 
         </div>
-        <div id="triad-box">
+        <div id="triad-box" class="feature">
             <div class="" style="margin:0 auto;">
 
                 <div class="highlight-bar"><h2 id="inversionViewHeading">Triads/Inversions</h2></div>

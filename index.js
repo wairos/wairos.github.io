@@ -790,61 +790,183 @@ keyNum = 0;
   // view = getView(g);
   // update();
 
-  $("#Ionian").on("click", function() {
-    g = getMode(keyNum);
-    order = 0;
-    modeName =  "Ionian";
-    update();
+function checkSwitch() {
+  var relsw = $("#relativeSwitch").val();
+  console.log(relsw);
+  if($("#relativeSwitch:checked").val()){
+    relativeFlag = false;
+    return relativeFlag;
+  }else{
+    relativeFlag = true;
+    return relativeFlag;
+  }
+}
 
+  $("#Ionian").on("click", function() {
+    modeName =  "Ionian";
+    checkSwitch();
+    if(relativeFlag === true) {
+      order = 0;
+      update();
+    }else{
+      var m = Scales[keyNum].root;
+      $("#Mode").html(m + " " + modeName);
+      $("#ModeNotes").html(Scales[keyNum].scale);
+    }
   });
 
   $("#Dorian").on("click", function() {
-    g = getMode(keyNum);
-    order = 1;
     modeName = "Dorian";
-    update();
-
+    checkSwitch();
+    var scale = Scales[keyNum];
+    if(relativeFlag === true) {
+      order = 1;
+      update();
+    }else{
+      var m = scale.root;
+      var s = scale.root +" "+ scale.second +" "+ lowerNote(scale.third) +" "+ scale.fourth +" "+ scale.fifth +" "+ scale.sixth +" "+ lowerNote(scale.seventh) +" "+ scale.root;
+      $("#Mode").html(m + " " + modeName);
+      $("#ModeNotes").html(s);
+    }
   });
 
   $("#Phrygian").on("click", function() {
-
-    order = 2;
     modeName = "Phrygian";
-    update();
-
+    var scale = Scales[keyNum];
+    checkSwitch();
+    if(relativeFlag === true){
+      order = 2;
+      update();
+    }else{
+      var m = scale.root;
+      var s = scale.root +" "+ lowerNote(scale.second) +" "+ lowerNote(scale.third) +" "+ scale.fourth +" "+ scale.fifth +" "+ lowerNote(scale.sixth) +" "+ lowerNote(scale.seventh) +" "+ scale.root;
+      $("#Mode").html(m + " " + modeName);
+      $("#ModeNotes").html(s);
+    }
   });
 
   $("#Lydian").on("click", function() {
-
-    order = 3;
     modeName = "Lydian";
-    update();
-
+    var scale = Scales[keyNum];
+    checkSwitch();
+    if(relativeFlag === true) {
+      order = 3;
+      update();
+    }else{
+      var m = scale.root;
+      var s = scale.root +" "+ scale.second +" "+ scale.third +" "+ raiseNote(scale.fourth) +" "+ scale.fifth +" "+ scale.sixth +" "+ scale.seventh +" "+ scale.root;
+      $("#Mode").html(m + " " + modeName);
+      $("#ModeNotes").html(s);
+    }
   });
 
   $("#Mixolydian").on("click", function() {
-
-    order = 4;
     modeName = "Mixolydian";
-    update();
-
+    var scale = Scales[keyNum];
+    checkSwitch();
+    if(relativeFlag === true) {
+      order = 4;
+      update();
+    }else{
+      var m = scale.root;
+      var s = scale.root +" "+ scale.second +" "+ scale.third +" "+ scale.fourth +" "+ scale.fifth +" "+ scale.sixth +" "+ lowerNote(scale.seventh) +" "+ scale.root;
+      $("#Mode").html(m + " " + modeName);
+      $("#ModeNotes").html(s);
+    }
   });
 
   $("#Aeolian").on("click", function() {
-
-    order = 5;
     modeName = "Aeolian";
-    update();
-
+    var scale = Scales[keyNum];
+    checkSwitch();
+    if(relativeFlag === true) {
+      order = 5;
+      update();
+    }else{
+      var m = scale.root;
+      var s = scale.root +" "+ scale.second +" "+ lowerNote(scale.third) +" "+ scale.fourth +" "+ scale.fifth +" "+ lowerNote(scale.sixth) +" "+ lowerNote(scale.seventh) +" "+ scale.root;
+      $("#Mode").html(m + " " + modeName);
+      $("#ModeNotes").html(s);
+    }
   });
 
   $("#Locrian").on("click", function() {
-
-    order = 6;
     modeName = "Locrian";
-    update();
-
+    var scale = Scales[keyNum];
+    checkSwitch();
+    if(relativeFlag === true) {
+      order = 6;
+      update();
+    }else{
+      var m = scale.root;
+      var s = scale.root +" "+ lowerNote(scale.second) +" "+ lowerNote(scale.third) +" "+ scale.fourth +" "+ lowerNote(scale.fifth) +" "+ lowerNote(scale.sixth) +" "+ lowerNote(scale.seventh) +" "+ scale.root;
+      $("#Mode").html(m + " " + modeName);
+      $("#ModeNotes").html(s);
+    }
   });
 
 
 });
+
+
+
+
+function lowerNote(name) {
+       if(name.length == 1){
+       name = name + "b";
+       return name;
+       }
+       if(name.length >= 2){
+           switch(name)
+       {
+           case "C#":case "D#":case "E#":case "F#":
+           case "G#":case "A#":case "B#":
+               name = name.replace("#",  "");
+               break;
+           case "Cb":case "Db":case "Eb":case "Fb":
+           case "Gb":case "Ab":case "Bb":
+                name = name + 'b';
+                break;
+           case "C##":case "D##":case "E##":case "F##":
+           case "G##":case "A##":case "B##":
+               name = name.replace("##","#");
+               break;
+           case "Cbb":case "Dbb":case "Ebb":case "Fbb":
+           case "Gbb":case "Abb":case "Bbb":
+                console.log("Try a different scale");
+                break;
+           }
+       }
+               return name;
+
+   }
+
+   function raiseNote(name) {
+       if(name.length == 1){
+       name = name + "#";
+       return name;
+       }
+       if(name.length >= 2){
+           switch(name)
+           {
+           case "C#":case "D#":case "E#":case "F#":
+           case "G#":case "A#":case "B#":
+               name = name.replace("#",  "##");
+               break;
+           case "Cb":case "Db":case "Eb":case "Fb":
+           case "Gb":case "Ab":case "Bb":
+                name = name.replace("b", "");
+                break;
+           case "C##":case "D##":case "E##":case "F##":
+           case "G##":case "A##":case "B##":
+               console.log("Try a different scale");
+               break;
+           case "Cbb":case "Dbb":case "Ebb":case "Fbb":
+           case "Gbb":case "Abb":case "Bbb":
+                name = name.replace("bb","b");
+                break;
+           }
+       }
+               return name;
+
+   }
