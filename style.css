@@ -23,6 +23,10 @@ li p {
   color: rgb(50,50,50);
 }
 
+.lilheadroom {
+  margin-top: 20px;
+}
+
 .headroom {
   margin-top: 100px;
 }
@@ -234,7 +238,52 @@ input:checked + .slider:before {
   -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
-
+/*NAV*/
+nav {
+  width: 100%;
+  background: #152E42;
+  border-top: 5px solid #000000;
+  border-bottom: 5px solid #000000;
+}
+nav .container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+nav .nav-item a {
+  display: block;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid rgba(255,255,255,0.4);
+  background: rgb(0,0,0);
+  color: white;
+}
+.active {
+  background: #FF9600!important;
+}
+nav .nav-item a:hover {
+  background: rgba(255,255,255,0.4);
+  text-decoration: none;
+}
+/*Modes Page*/
+.mode {
+  text-align: center;
+  width: 80%;
+  margin: 34px auto;
+  padding-bottom: 34px;
+  border-bottom: 1px solid grey;
+}
+.mode table {
+  margin: 0 auto;
+  border: 1px solid grey;
+}
+.mode tr {
+  border: 1px solid grey;
+  text-align: left;
+}
+.mode td {
+  padding: 10px;
+}
 /* Rounded sliders */
 .slider.round {
   border-radius: 34px;
