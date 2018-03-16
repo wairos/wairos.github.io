@@ -1,0 +1,9 @@
+.chord-column {
+
+  flex: 1 1 100%;
+
+  &__section {
+    display: flex;
+  }
+
+}

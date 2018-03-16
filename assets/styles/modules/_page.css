@@ -1,0 +1,15 @@
+.page {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 0.625rem;
+  box-sizing: border-box;
+
+  &__title {
+    text-align: center;
+  }
+
+  p {
+    padding: 0 0.625rem;
+  }
+}

@@ -1,0 +1,11 @@
+.footer {
+  background: $fill;
+  padding: 2rem 0;
+  border-top: 1rem solid $secondary;
+  margin-top: 2rem;
+
+  &__text {
+    color: $white;
+    text-align: center;
+  }
+}

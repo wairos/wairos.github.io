@@ -589,7 +589,7 @@ keyNum = 0;
     });
   }
 
-  $("#resetButton").click(function() {
+  function reset() {
     clickCount = 0;
     iiclickCount = 0;
     iiiclickCount = 0;
@@ -628,98 +628,109 @@ keyNum = 0;
     getivChord();
     getvChord();
     getviChord();
-  });
+  }
 
-  $("#button").click(function() {
-    keyNum = 0;
-    getKey(0);
+$('#keySelect').change(function(){
+  keyNum = $('#keySelect').val();
+  if(keyNum == ""){
+    reset();
+  }else{
+    getKey(keyNum);
     changeKey();
     return keyNum;
-  });
-  $("#dbutton").click(function() {
-    keyNum = 1;
-    getKey(1);
-    changeKey();
-    return keyNum;
-  });
-  $("#ebutton").click(function() {
-    keyNum = 2;
-    getKey(2);
-    changeKey();
-    return keyNum;
-  });
-  $("#fbutton").click(function() {
-    keyNum = 3;
-    getKey(3);
-    changeKey();
-    return keyNum;
-  });
-  $("#gbutton").click(function() {
-    keyNum = 4;
-    getKey(4);
-    changeKey();
-    return keyNum;
-  });
-  $("#abutton").click(function() {
-    keyNum = 5;
-    getKey(5);
-    changeKey();
-    return keyNum;
-  });
-  $("#bbutton").click(function() {
-    keyNum = 6;
-    getKey(6);
-    changeKey();
-    return keyNum;
-  });
-  $("#csbutton").click(function() {
-    keyNum = 7;
-    getKey(7);
-    changeKey();
-    return keyNum;
-  });
-  $("#fsbutton").click(function() {
-    keyNum = 8;
-    getKey(8);
-    changeKey();
-    return keyNum;
-  });
-  $("#gbbutton").click(function() {
-    keyNum = 9;
-    getKey(9);
-    changeKey();
-    return keyNum;
-  });
-  $("#abbutton").click(function() {
-    keyNum = 10;
-    getKey(10);
-    changeKey();
-    return keyNum;
-  });
-  $("#bbbutton").click(function() {
-    keyNum = 11;
-    getKey(11);
-    changeKey();
-    return keyNum;
-  });
-  $("#cbbutton").click(function() {
-    keyNum = 12;
-    getKey(12);
-    changeKey();
-    return keyNum;
-  });
-  $("#dbbutton").click(function() {
-    keyNum = 13;
-    getKey(13);
-    changeKey();
-    return keyNum;
-  });
-  $("#ebbutton").click(function() {
-    keyNum = 14;
-    getKey(14);
-    changeKey();
-    return keyNum;
-  });
+  }
+});
+
+  // $("#button").click(function() {
+  //   keyNum = 0;
+  //   getKey(0);
+  //   changeKey();
+  //   return keyNum;
+  // });
+  // $("#dbutton").click(function() {
+  //   keyNum = 1;
+  //   getKey(1);
+  //   changeKey();
+  //   return keyNum;
+  // });
+  // $("#ebutton").click(function() {
+  //   keyNum = 2;
+  //   getKey(2);
+  //   changeKey();
+  //   return keyNum;
+  // });
+  // $("#fbutton").click(function() {
+  //   keyNum = 3;
+  //   getKey(3);
+  //   changeKey();
+  //   return keyNum;
+  // });
+  // $("#gbutton").click(function() {
+  //   keyNum = 4;
+  //   getKey(4);
+  //   changeKey();
+  //   return keyNum;
+  // });
+  // $("#abutton").click(function() {
+  //   keyNum = 5;
+  //   getKey(5);
+  //   changeKey();
+  //   return keyNum;
+  // });
+  // $("#bbutton").click(function() {
+  //   keyNum = 6;
+  //   getKey(6);
+  //   changeKey();
+  //   return keyNum;
+  // });
+  // $("#csbutton").click(function() {
+  //   keyNum = 7;
+  //   getKey(7);
+  //   changeKey();
+  //   return keyNum;
+  // });
+  // $("#fsbutton").click(function() {
+  //   keyNum = 8;
+  //   getKey(8);
+  //   changeKey();
+  //   return keyNum;
+  // });
+  // $("#gbbutton").click(function() {
+  //   keyNum = 9;
+  //   getKey(9);
+  //   changeKey();
+  //   return keyNum;
+  // });
+  // $("#abbutton").click(function() {
+  //   keyNum = 10;
+  //   getKey(10);
+  //   changeKey();
+  //   return keyNum;
+  // });
+  // $("#bbbutton").click(function() {
+  //   keyNum = 11;
+  //   getKey(11);
+  //   changeKey();
+  //   return keyNum;
+  // });
+  // $("#cbbutton").click(function() {
+  //   keyNum = 12;
+  //   getKey(12);
+  //   changeKey();
+  //   return keyNum;
+  // });
+  // $("#dbbutton").click(function() {
+  //   keyNum = 13;
+  //   getKey(13);
+  //   changeKey();
+  //   return keyNum;
+  // });
+  // $("#ebbutton").click(function() {
+  //   keyNum = 14;
+  //   getKey(14);
+  //   changeKey();
+  //   return keyNum;
+  // });
 
 
   function getMode(num) {

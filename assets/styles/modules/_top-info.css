@@ -1,0 +1,21 @@
+.top-info {
+  text-align: center;
+  background: $fill;
+  padding: 0.625rem 0;
+
+  &__title {
+    color: $white;
+    font-size: 3rem;
+    margin: 0.625rem 0 0 0;
+    font-family: 'Anton';
+  }
+
+  &__description {
+    color: $secondary;
+    font-family: 'Roboto';
+    font-size: 1.25rem;
+    margin: 0 0 0.625rem 0;
+    padding: 0 0.625rem;
+  }
+
+}

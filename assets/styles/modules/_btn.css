@@ -1,0 +1,18 @@
+.btn {
+  padding: 0.35rem 1rem;
+  background: $white;
+  border: none;
+  margin: 0.15rem;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+  text-align: center;
+  border: solid $primary;
+  &:hover {
+    cursor: pointer;
+  }
+  &:active, &:focus {
+    outline: none;
+    background: $primary;
+    color: $white;
+  }
+}

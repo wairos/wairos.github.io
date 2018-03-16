@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
   <!-- Global site tag (gtag.js) - Google AdWords: 837233839 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-837233839"></script>
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=AW-837233839"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'AW-837233839');
-</script>
+</script> -->
 <!-- Event snippet for Website Visits conversion page -->
-<script>
+<!-- <script>
   gtag('event', 'conversion', {'send_to': 'AW-837233839/aXLkCJilmXsQr9mcjwM'});
-</script>
+</script> -->
 
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width">
@@ -21,37 +21,38 @@
   <link href="favicon.png" type="image/x-icon" rel="icon"/>
   <link href="favicon.png" type="image/x-icon" rel="shortcut icon"/>
   <title>Musician Key - A Free Music Theory Reference Tool for All Major Keys</title>
-  <link href="https://fonts.googleapis.com/css?family=Catamaran|Covered+By+Your+Grace|Nunito|Shadows+Into+Light+Two|Roboto|Anton" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/style.css">
+
+  <link rel="stylesheet" href="./temp/style.css">
 </head>
 <body>
   <div class="top-info">
-    <h1 class="text-center grey" style="font-family:Anton;font-size:350%;">MusicianKey</h1>
-    <h5 class="text-center white"> An easy-to-use music theory reference tool for musicians.</h5>
+    <h1 class="top-info__title">MusicianKey</h1>
+    <h5 class="top-info__description"> An easy-to-use music theory reference tool for musicians.</h5>
   </div>
   <nav>
-    <div class="container">
-      <div class="nav-item">
-        <a class="nav-link" href="/">Home</a>
-      </div>
-      <div class="nav-item">
-        <a class="nav-link" href="/modes.html">Modes</a>
+    <div class="nav-bar">
+      <div class="page nav-bar__flex">
+        <div class="nav-bar__item">
+          <a class="nav-bar__link" href="/">Home</a>
+        </div>
+        <div class="nav-bar__item">
+          <a class="nav-bar__link" href="/modes.html">Modes</a>
+        </div>
       </div>
     </div>
   </nav>
-  <div class="jumbotrone">
+  <div class="main-container">
 
-<div class="container">
-  <h1 class="lilheadroom">Modes of the Major Scale</h1>
-  <p>There are 7 modes in a Major scale, one for each note. An easy way to think about modes is to imagine starting a scale, ex. C Major, on a note other than its root. If you start C on its 3rd note and play, E F G A B C D E, you will have just played the E phrygian mode.</p>
-  <p>
+<div class="page">
+  <h1 class="page__title">Modes of the Major Scale</h1>
+  <p class="page__content">There are 7 modes in a Major scale, one for each note. An easy way to think about modes is to imagine starting a scale, ex. C Major, on a note other than its root. If you start C on its 3rd note and play, E F G A B C D E, you will have just played the E phrygian mode.</p>
+  <p class="page__content">
   These are called relative modes because they are relative to a music key, in this case C Major.</p>
-  <p>
+  <p class="page__content">
   There are also Parallel Modes. Parallel Modes do not share the same Key. Instead they share the same starting note. An example would be C Major and C Lydian. Each start on the note, C, but belong to different keys. </p>
   <div class="mode">
-    <h3>Ionian</h3>
-    <p>Essentially the same as the major scale.</p>
+    <h3 class="mode__name">Ionian</h3>
+    <p class="mode__description">Essentially the same as the major scale.</p>
     <table>
       <tr>
         <td></td>
@@ -303,10 +304,18 @@
   </div>
   <p>The Major Scale is not the only scale with modes. Musician Key plans to cover these and much more soon. <a href="/">Back to the reference tool.</a></p>
 </div>
-<p class="small text-right" style="margin-top:40px;">&copy; <script type="text/javascript">
-document.write(new Date().getFullYear());
-</script> Lukas Waire</p>
 </div>
+<footer class="footer">
+  <div class="page">
+      <p class="footer__text">&copy;<span id="date"></span>  MusicianKey</p>
+  </div>
+
+</footer>
+
+<script type="text/javascript">
+  document.getElementById('date').innerHTML = new Date().getFullYear();
+</script>
+
 <script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
