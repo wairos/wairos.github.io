@@ -1,9 +1,11 @@
 .feature {
   text-align: center;
-  background: $fill;
+  background: $fillGradient;
   box-sizing: border-box;
   margin: 4rem auto;
   padding: 0.625rem;
+  box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+  box-shadow: 4px 4px 8px #00000099;
 
   &__title {
     color: $white;
@@ -12,7 +14,7 @@
   }
 
   &__viewer {
-    background: white;
+    background: $white;
     padding: 0.625rem 0;
     &--flex {
       display: flex;

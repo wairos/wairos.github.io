@@ -1,6 +1,11 @@
 $primary: #333;
 $secondary: #777;
+$secondaryGradient: linear-gradient(#777, #666);
+$secondaryGradientReverse: linear-gradient(#555, #777);
 $white: #fff;
 $fill: #152E42;
+$fillGradient: linear-gradient(#152E42, #141D31);
 $fill2: #dbeefc;
+$fill2Gradient: linear-gradient(#dbeefc, #caddeb);
 $accent: #FF9600;
+$accentGradient: linear-gradient(#DD7400, #FF9600);

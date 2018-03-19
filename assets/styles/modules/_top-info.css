@@ -1,6 +1,6 @@
 .top-info {
   text-align: center;
-  background: $fill;
+  background: $fillGradient;
   padding: 0.625rem 0;
 
   &__title {

@@ -1,5 +1,5 @@
 .footer {
-  background: $fill;
+  background: $fillGradient;
   padding: 2rem 0;
   border-top: 1rem solid $secondary;
   margin-top: 2rem;
